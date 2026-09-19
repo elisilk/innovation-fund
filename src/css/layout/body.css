@@ -1,0 +1,15 @@
+body {
+  min-block-size: calc(100vb - var(--admin-bar-block-size));
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
+  main {
+    /*
+    TO DO: need this to match the size of the sticky headers
+    177px regularly
+    137px if small
+    + admin bar
+    */
+    scroll-margin-top: calc(177px + var(--admin-bar-block-size));
+  }
+}

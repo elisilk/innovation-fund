@@ -1,0 +1,57 @@
+body {
+  background: hsl(var(--clr-primary));
+  color: hsl(var(--clr-body));
+  font-family: var(--ff-body);
+  line-height: var(--lh-body);
+}
+
+main {
+  background: hsl(var(--clr-neutral-100));
+  color: hsl(var(--clr-neutral-900));
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-headings);
+  text-wrap: balance;
+  text-align: center;
+}
+
+/* font sizes */
+
+body {
+  font-size: var(--fs-md);
+}
+
+h1 {
+  font-size: var(--fs-3xl);
+}
+
+h2 {
+  font-size: var(--fs-2xl);
+}
+
+h3 {
+  font-size: var(--fs-xl);
+}
+
+h4 {
+  font-size: var(--fs-lg);
+}
+
+small {
+  font-size: var(--fs-sm);
+}
+
+/* colors */
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(var(--clr-primary));
+}

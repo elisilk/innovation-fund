@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 2ch;
+}
+
+[role='list'] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* make images easier to work with */
+img,
+picture,
+svg,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who have turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* make sure hidden elements actually get hidden */
+[hidden] {
+  display: none;
+}

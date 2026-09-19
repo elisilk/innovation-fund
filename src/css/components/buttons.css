@@ -1,0 +1,28 @@
+.button {
+  cursor: pointer;
+  display: inline flex;
+  background-color: hsl(var(--clr-accent));
+  color: hsl(var(--clr-neutral-100));
+  padding: 0.5em 1.25em;
+  outline: none;
+
+  border: 1px solid hsl(var(--clr-accent));
+  border-radius: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover,
+  &:focus-visible {
+    background-color: hsl(var(--clr-neutral-100));
+    color: hsl(var(--clr-accent));
+    border: 1px solid hsl(var(--clr-accent));
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed hsl(var(--clr-accent));
+    outline-offset: 2px;
+    text-decoration: none;
+  }
+}

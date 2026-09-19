@@ -1,0 +1,39 @@
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: balance;
+  gap: 0.5rem;
+  border: 0;
+  padding: 0;
+}
+
+.filter-btn {
+  cursor: pointer;
+  display: inline flex;
+  align-items: center;
+  font-size: var(--fs-md);
+  line-height: 1;
+  text-transform: uppercase;
+
+  background: transparent;
+  padding: 0.25rem 1rem;
+  outline: none;
+
+  color: hsl(var(--clr-neutral-500));
+  background-color: hsl(var(--clr-neutral-100));
+  border: 1px solid hsl(var(--clr-secondary));
+  border-radius: 40px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: hsl(var(--clr-neutral-500));
+  background-color: hsl(var(--clr-secondary));
+  border: 1px solid hsl(var(--clr-secondary));
+}
+
+.filter-btn.active {
+  pointer-events: none;
+  color: hsl(var(--clr-neutral-500));
+  background-color: hsl(var(--clr-secondary));
+}

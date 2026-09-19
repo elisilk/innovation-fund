@@ -1,0 +1,24 @@
+/* Block spacing/rhythm */
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1.5em);
+}
+
+.flow > * + *:has(> h2:first-child) {
+  margin-block-start: calc(1.5 * var(--fs-3xl));
+}
+
+.flow > * + *:has(> * > h2:first-child) {
+  margin-block-start: calc(1.5 * var(--fs-3xl));
+}
+
+/* Convenience block to investigate block scrolling */
+
+.blank-space {
+  background-color: pink;
+  margin: 2rem auto;
+  inline-size: 50%;
+  block-size: 1000px;
+  display: grid;
+  place-items: center;
+}

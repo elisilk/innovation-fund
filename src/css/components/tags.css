@@ -1,0 +1,32 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 1.5rem 0;
+}
+
+.tag {
+  display: inline-block;
+  font-size: var(--fs-md);
+  /* font-weight: var(--fw-semi-bold); */
+  padding: 0.25rem 1rem;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.tag--year {
+  color: hsl(var(--clr-neutral-200));
+  background-color: hsl(var(--clr-primary));
+}
+
+.tag--active {
+  color: hsl(var(--clr-neutral-200));
+  background-color: hsl(var(--clr-accent));
+}
+
+.tag--current {
+  color: hsl(var(--clr-neutral-500));
+  background-color: hsl(var(--clr-secondary));
+}

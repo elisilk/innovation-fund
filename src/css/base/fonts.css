@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('/wp-content/themes/bhsinnovationfund2026/assets/static/fonts/nunito/Nunito-VariableFont.woff2')
+    format('woff2');
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/wp-content/themes/bhsinnovationfund2026/assets/static/fonts/nunito-sans/NunitoSans-VariableFont.woff2')
+    format('woff2');
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}

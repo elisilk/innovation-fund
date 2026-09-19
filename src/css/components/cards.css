@@ -1,0 +1,115 @@
+.card-list {
+  --auto-fill-style: auto-fill;
+  --card-inline-size: 300px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(
+    var(--auto-fill-style),
+    minmax(min(100%, var(--card-inline-size)), 1fr)
+  );
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+/* .card-list > * {
+  border: 1px dashed black;
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.card-list img {
+  max-block-size: 200px;
+  inline-size: auto;
+  margin-inline: auto;
+  object-fit: cover;
+}
+ */
+
+.card {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.program-card {
+  max-inline-size: 400px;
+}
+
+.card,
+.card__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__text {
+  flex-grow: 1;
+  order: 1;
+  padding: 1rem;
+}
+
+.card__text > * + * {
+  margin-top: 1rem;
+}
+
+.card__text :last-child {
+  margin-top: auto;
+}
+
+.card__text > :nth-last-child(2) {
+  margin-bottom: 1rem;
+}
+
+.card__eyebrow {
+  text-transform: uppercase;
+  font-size: var(--fs-sm);
+  color: var(--clr-neutral-300);
+}
+
+.card__title {
+  text-align: start;
+  font-size: var(--fs-xl);
+}
+
+.card__title > a {
+  color: hsl(var(--clr-neutral-400));
+  text-decoration: none;
+  border: 0;
+}
+
+.card:has(a:focus-visible) {
+  outline: 2px dashed hsl(var(--clr-accent));
+  outline-offset: 6px;
+}
+
+.card:focus-within,
+.card:hover {
+  box-shadow: 0 0 0 3px hsl(var(--clr-primary));
+}
+
+.card:hover a,
+.card__title > a:hover,
+.card__title > a:focus-visible {
+  color: hsl(var(--clr-accent));
+  outline: none;
+}
+
+.card__img {
+  height: 10rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1rem));
+}
+
+.card__img > img {
+  inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+}
+
+.card__img > .placeholder {
+  inline-size: auto;
+  block-size: 100%;
+  object-fit: contain;
+  margin-inline: auto;
+}

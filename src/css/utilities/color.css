@@ -1,0 +1,28 @@
+.shadow {
+  box-shadow: 0px 3px 15px hsl(var(--clr-neutral-900) / 0.2);
+}
+
+.bg-neutral {
+  background-color: hsl(var(--clr-neutral-100));
+  color: hsl(var(--clr-neutral-900));
+}
+
+.bg-neutral-200 {
+  background-color: hsl(var(--clr-neutral-200));
+  color: hsl(var(--clr-neutral-900));
+}
+
+.bg-primary {
+  background-color: hsl(var(--clr-primary));
+  color: hsl(var(--clr-neutral-100));
+}
+
+.bg-secondary {
+  background-color: hsl(var(--clr-secondary));
+  color: hsl(var(--clr-neutral-800));
+}
+
+.bg-accent {
+  background-color: hsl(var(--clr-accent));
+  color: hsl(var(--clr-neutral-100));
+}

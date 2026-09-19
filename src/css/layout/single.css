@@ -1,0 +1,52 @@
+.post__header {
+  inline-size: min(
+    100% - 2 * var(--container-inline-size-gutter),
+    var(--container-inline-size-max-regular)
+  );
+  margin-inline: auto;
+
+  display: grid;
+  gap: calc(1.5 * var(--container-inline-size-gutter));
+  align-items: center;
+
+  @media screen and (width > 750px) {
+    &.post__header--has-thumbnail {
+      grid-template-columns:
+        min(var(--container-inline-size-max-text), 60%)
+        1fr;
+
+      .educator__department {
+        text-align: start;
+      }
+
+      .post__tags {
+        justify-content: start;
+      }
+    }
+  }
+}
+
+.post__title {
+  text-align: start;
+}
+
+.post__main {
+  margin-block: var(--container-padding-block);
+}
+
+.post__thumbnail {
+  img {
+    max-block-size: 300px;
+    object-fit: cover;
+    object-position: center 25%;
+  }
+}
+
+.post__excerpt {
+  font-style: italic;
+  font-size: var(--fs-lg);
+}
+
+.educator__department {
+  font-size: var(--fs-lg);
+}

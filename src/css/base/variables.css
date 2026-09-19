@@ -1,0 +1,117 @@
+:root {
+  /* Colors */
+  /* Based on: https://maketintsandshades.com/#4a4c4a */
+  --clr-neutral-100: 0 0% 100%; /* #ffffff */
+  --clr-neutral-200: 0 0% 93%; /* #ededed */
+  --clr-neutral-300: 120 1% 51%; /* #808280 */
+  --clr-neutral-400: 120 1% 29%; /* #4a4c4a */
+  --clr-neutral-500: 120 2% 24%; /* #3b3d3b */
+  --clr-neutral-600: 120 2% 18%; /* #2c2e2c */
+  --clr-neutral-700: 0 0% 12%; /* #1e1e1e */
+  --clr-neutral-800: 0 0% 6%; /* #0f0f0f */
+  --clr-neutral-900: 0 0% 0%; /* #000000 */
+
+  /* Primary accent colors */
+  --clr-blue-400: 219 44% 21%; /* #1e2f4e */
+  --clr-yellow-400: 44 93% 54%; /* #f7bc1c */
+  --clr-red-400: 4 52% 44%; /* #a93d35 */
+
+  /* hsl(219, 44%, 21%) / rgb(30, 47, 78) / #1e2f4e */
+  /* hsl(44, 93%, 54%) / rgb(247, 188, 28) / #f7bc1c */
+  /* hsl(4, 52%, 44%) / rgb(169, 61, 53) / #a93d35 */
+  /* hsl(218, 34%, 60%) / rgb(120, 145, 188) / #7891bc */
+  /* hsl(120, 1%, 29%) / rgb(74, 76, 74) / #4a4c4a */
+  /* hsl(90, 2%, 17%) / rgb(44, 45, 43) / #2c2d2b */
+
+  /*
+  Color resources:
+  https://coolors.co/1e2f4e-f7bc1c-a93d35-7891bc-788aa3 
+  https://maketintsandshades.com/#1e2f4e,f7bc1c,a93d35
+  */
+
+  --clr-blue-200: 218 49% 71%; /* #90abd9 */
+  --clr-blue-300: 215 36% 55%; /* #6385b6 */
+
+  --clr-yellow-300: 48 100% 50%; /* #ffcb02 */
+
+  --clr-body: var(--clr-neutral-400);
+  --clr-heading: var(--clr-neutral-900);
+
+  --clr-primary: var(--clr-blue-400);
+  --clr-secondary: var(--clr-yellow-400);
+  --clr-accent: var(--clr-red-400);
+
+  /* Typography */
+  --ff-body: 'Nunito', sans-serif;
+  --ff-headings: 'Nunito Sans', sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 700;
+  --fw-bold: 900;
+
+  /* Mobile base */
+  --fs-base: 16px;
+  --fs-sm: 12px; /* 16 ÷ 1.25 */
+  --fs-md: 16px; /* base */
+  --fs-lg: 20px; /* 16 × 1.25 */
+  --fs-xl: 24px; /* 20 × 1.25 */
+  --fs-2xl: 32px; /* 25 × 1.25 */
+  --fs-3xl: 40px; /* 31.25 × 1.25 */
+  --fs-4xl: 48px; /* 39.06 × 1.25 */
+
+  /* Line Height */
+  --lh-body: 1.5;
+  --lh-headings: 1.2;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Layout */
+  --container-inline-size-max-text: 600px;
+  --container-inline-size-max-medium: 800px;
+  --container-inline-size-max-regular: 1110px;
+  --container-inline-size-max-large: 1440px;
+  --container-inline-size-gutter: 1.5rem;
+
+  --container-padding-block: 3rem;
+
+  /* Border Radius */
+  --radius-md: 0.5rem;
+
+  /* Transitions */
+  --transition-base: 150ms ease;
+
+  /* Wordpress */
+  --admin-bar-block-size: 0px;
+}
+
+/* Font size system from: https://robertcelt95.medium.com/responsive-typography-that-actually-works-beyond-font-size-clamp-acf592b79774 (and then rounded) */
+
+@media (min-width: 768px) {
+  :root {
+    --fs-base: 18px; /* Slightly larger on tablets */
+    --fs-sm: 14px;
+    --fs-md: 18px;
+    --fs-lg: 22px;
+    --fs-xl: 28px;
+    --fs-2xl: 36px;
+    --fs-3xl: 44px;
+    --fs-4xl: 54px;
+  }
+}
+
+.admin-bar {
+  /* Adjust for Admin Bar on Desktop (> 782px) */
+  @media screen and (min-width: 783px) {
+    --admin-bar-block-size: 32px;
+  }
+
+  /* Adjust for Admin Bar on Mobile/Tablets (<= 782px) */
+  @media screen and (max-width: 782px) {
+    --admin-bar-block-size: 46px;
+  }
+}

@@ -1,0 +1,35 @@
+name: Build Website Theme
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🚀 Build Website Theme and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get Latest Code
+        uses: actions/checkout@v4
+
+      - name: Setup Runtime and Dependencies
+        uses: pnpm/setup@v1
+        with:
+          runtime: node@22
+          cache: true
+
+      - name: 🔨 Build project
+        run: pnpm build
+
+      - name: 📂 Sync Files
+        uses: SamKirkland/web-deploy@v1
+        with:
+          target-server: innovationfund.dreamhosters.com
+          remote-user: dh_nyiiwz
+          private-ssh-key: ${{ secrets.SSH_KEY }}
+          destination-path: /home/dh_nyiiwz/innovationfund.dreamhosters.com/wp-content/themes/bhsinnovationfund2026/

@@ -1,0 +1,21 @@
+a:not(:has(img)) {
+  /* color: currentColor; */
+  color: hsl(var(--clr-accent));
+  /* text-decoration: none; */
+  /* border-bottom: 1px dashed hsl(var(--clr-accent)); */
+  text-decoration: underline dashed 1px;
+  text-underline-position: under;
+}
+
+a:not(:has(img)):hover,
+a:not(:has(img)):focus-visible {
+  color: hsl(var(--clr-primary));
+  text-decoration: underline solid 1px;
+  /* border-bottom: 1px solid hsl(var(--clr-primary)); */
+}
+
+a:focus-visible {
+  border: 0;
+  outline: 2px dashed hsl(var(--clr-primary));
+  outline-offset: 4px;
+}

@@ -1,0 +1,36 @@
+.section-rich-text {
+  margin-block: var(--container-padding-block);
+
+  .button {
+    display: block;
+    margin-inline: auto;
+    inline-size: fit-content;
+  }
+
+  h2 {
+    margin-block-start: 2rem;
+  }
+
+  p + p {
+    margin-block-start: 1rem;
+  }
+
+  ul {
+    padding-inline-start: 1.5rem;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: fit-content(33%) 1fr;
+    gap: 1em 2em;
+
+    dt {
+      font-style: italic;
+      text-wrap: balance;
+    }
+
+    dd {
+      margin-inline-start: 0;
+    }
+  }
+}

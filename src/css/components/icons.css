@@ -1,0 +1,20 @@
+/* Base icon sizing layout */
+.icon-ui {
+  --_icon-size: var(--icon-size, 24px);
+  inline-size: var(--_icon-size);
+  block-size: var(--_icon-size);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Control vector coloring directly through CSS */
+.icon-arrow {
+  fill: currentColor; /* For solid style icons */
+  stroke: currentColor; /* For outline style icons */
+  transition: fill 0.3s ease;
+}
+
+/* Effortless hover effects without duplicating assets */
+.btn-primary:hover .icon-arrow {
+  fill: currentColor;
+}

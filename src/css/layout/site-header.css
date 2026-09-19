@@ -1,0 +1,64 @@
+.site-header {
+  background-color: hsl(var(--clr-neutral-100) / 0.98);
+  border-bottom: 5px solid hsl(var(--clr-secondary));
+  position: sticky;
+  top: 0;
+  inline-size: 100%;
+  z-index: 2;
+}
+
+/* header--small transitions and changes */
+
+.site-header__banner,
+.site-header__main {
+  padding-inline: var(--container-inline-size-gutter);
+}
+
+.site-header__banner .container,
+.site-header__main .container {
+  max-inline-size: var(--container-inline-size-max-regular);
+  margin-inline: auto;
+  transition: padding 0.5s ease;
+}
+
+.site-header__main .logo__image {
+  transition: height 0.5s ease;
+}
+
+.site-header--small .header__main {
+  --wrapper-padding-block: 0.5rem;
+}
+
+.site-header .logo__image {
+  object-fit: contain;
+  block-size: 100px;
+  inline-size: auto;
+}
+
+.site-header--small .logo__image {
+  height: 60px;
+}
+
+.site-header__banner > .container {
+  padding-block: var(--space-sm);
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+}
+
+.site-header__main > .container {
+  padding-block: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > :first-child {
+    flex-shrink: 0;
+  }
+}
+
+.site-header__menu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

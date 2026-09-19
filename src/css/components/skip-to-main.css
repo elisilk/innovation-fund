@@ -1,0 +1,15 @@
+.skip-to-main {
+  position: absolute;
+  padding: 0.5em 2em;
+  top: calc(10px + var(--admin-bar-block-size));
+  left: 10px;
+  translate: -200%;
+  z-index: 2;
+
+  &:hover,
+  &:focus-visible {
+    background-color: hsl(var(--clr-accent));
+    color: hsl(var(--clr-neutral-100));
+    translate: 0;
+  }
+}

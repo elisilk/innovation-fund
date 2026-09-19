@@ -1,0 +1,105 @@
+{
+    "key": "group_6a19c80313195",
+    "title": "Educator Info",
+    "fields": [
+        {
+            "key": "field_6a19c803aa719",
+            "label": "Department",
+            "name": "department",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "academic_support": "Academic Support",
+                "ace": "ACE (Alternative Choices in Education)",
+                "athletics": "Athletics",
+                "career_tech": "Career & Technology Education",
+                "ed_tech_library": "Educational Technology & Library",
+                "english": "English",
+                "english_language_learners": "English Language Learners",
+                "guidance": "Guidance",
+                "health_fitness": "Health & Fitness",
+                "math": "Math",
+                "performing_arts": "Performing Arts",
+                "science": "Science",
+                "special_ed": "Special Education",
+                "social_studies": "Social Studies",
+                "sws": "SWS (School Within a School)",
+                "visual_arts": "Visual Arts",
+                "world_language": "World Language",
+                "deans": "Deans Office"
+            },
+            "default_value": false,
+            "return_format": "array",
+            "multiple": 0,
+            "allow_null": 1,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_6a1a0a57f4d6a",
+            "label": "Related Programs",
+            "name": "related_programs",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "program"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "elements": "",
+            "bidirectional": 1,
+            "bidirectional_target": [
+                "field_6a19cfb6ee652"
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "educator"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1780091535
+}

@@ -1,0 +1,40 @@
+.section-impact-stats {
+  background-color: hsl(var(--clr-blue-400));
+
+  .section-impact-stats__inner {
+    max-inline-size: var(--container-inline-size-max-regular);
+    margin-inline: auto;
+
+    display: grid;
+
+    @media screen and (width > 650px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .stat {
+    padding: 3rem 1rem;
+    text-align: center;
+
+    color: hsl(var(--clr-neutral-100));
+
+    &:nth-child(odd) {
+      background-color: hsl(var(--clr-blue-200));
+    }
+
+    display: grid;
+    align-content: start;
+  }
+
+  .stat__value {
+    line-height: 1;
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .stat__description {
+    margin-block-start: 1em;
+    font-size: var(--fs-xl);
+    text-wrap: balance;
+  }
+}
