@@ -1,115 +1,161 @@
 # Brookline High School Innovation Fund
 
+A custom WordPress theme and structured content-management experience for the [Brookline High School Innovation Fund](https://bhsinnovationfund.org/), a nonprofit organization supporting educational innovation in Brookline, Massachusetts.
+
 **Status: Under development**
 
-A custom WordPress theme and content architecture for the [Brookline High School Innovation Fund](https://bhsinnovationfund.org/), a nonprofit organization supporting educational innovation.
+The public site is live, but the custom theme, content model, and editorial experience are still being developed and refined.
 
-**[Live Site](https://innovationfund.dreamhosters.com/)** · **[Repository](https://github.com/elisilk/innovation-fund)**
+**[Live Demo](https://innovationfund.dreamhosters.com/)**
 
 ## Overview
 
-This project involves rebuilding the Innovation Fund's website with a custom WordPress theme, structured content management, and a development workflow that supports local development and deployment to the live site.
+This project involves rebuilding the Innovation Fund's website with a custom WordPress theme and a more structured content-management workflow.
 
-The work is focused on improving the site's maintainability, responsive behavior, accessibility, content consistency, and editorial usability while preserving the organization's established visual direction.
+The work is focused not only on the public-facing interface, but also on the underlying content model and WordPress editing experience. The site is intended to be maintained by a staff member, so the content-management system needs to support straightforward updates while reducing opportunities for inconsistent formatting and presentation.
 
-The project is currently under development. The site is live, but the content model, frontend implementation, and supporting workflows will continue to evolve.
+The existing site's implementation presented challenges involving responsive behavior, typography, color and font customization through the WYSIWYG editor, text size, contrast, and heading consistency. The new implementation preserves much of the existing visual direction while introducing more structured content and targeted improvements to accessibility, responsiveness, and consistency.
 
 ## Project Goals
 
-The project is intended to:
-
-- Provide a more consistent and responsive experience across screen sizes.
-- Improve accessibility, including content structure, contrast, typography, and interaction behavior.
-- Give the organization's staff member a simpler and more structured way to manage content.
-- Separate content management concerns from frontend presentation.
-- Establish a maintainable custom WordPress theme and development workflow.
-- Support relationships between programs, educators, news, and events.
+- Build a maintainable custom WordPress theme.
+- Create a structured content model for programs, educators, events, and news.
+- Provide a manageable editorial workflow for the site's staff maintainer.
+- Reduce reliance on arbitrary formatting within the WordPress editor.
+- Improve responsive behavior and accessibility.
+- Establish a local development workflow with version control and automated theme deployment.
+- Support relationships between related content, such as programs and educators.
 
 ## Content Architecture
 
-The site uses WordPress as its content management system, with structured fields and custom post types used to represent the organization's content.
+The site uses WordPress's content-management capabilities alongside custom post types and structured fields.
 
-The content model includes:
+The current content model includes:
 
-- **Programs:** Information about funded educational programs, including associated metadata and relationships.
-- **Educators:** Information about educators connected to programs.
-- **Events:** Information about the organization's community and fundraising events.
-- **News:** Updates and stories managed through WordPress posts and structured fields.
+- **Programs:** Information about programs supported by the Innovation Fund.
+- **Educators:** Information about educators associated with programs.
+- **Events:** Fundraising, promotional, and other organizational events.
+- **News:** Updates and stories managed through WordPress Posts, with structured fields and relationships to relevant programs and events.
+- **Page sections:** Structured page content that can be composed from predefined layouts.
 
-The content model is designed around the needs of the organization and the staff member responsible for maintaining the site. The goal is to provide structured editing workflows without requiring the maintainer to manage layout and presentation details directly in page content.
+Relationships between content types help connect related information without requiring the same content to be repeatedly entered in multiple places.
+
+The content model and editorial experience remain under development as the needs of the organization and its staff maintainer become clearer.
 
 ## WordPress Implementation
 
-The project uses a custom WordPress theme built with:
+The site is built using a custom WordPress theme with a structured editing experience.
 
-- PHP and WordPress theme templates
-- Custom post types
-- Structured custom fields
-- Relationships between content types
-- Vite-based asset development and builds
-- CSS and custom properties
-- A structured approach to reusable layout and styling
+Key implementation elements include:
 
-The theme is being developed as a custom implementation rather than as a child theme of an existing commercial theme.
+- Custom WordPress theme developed with PHP, CSS, Vite, and pnpm.
+- Secure Custom Fields (SCF) used to create structured fields and support custom content types.
+- Custom post types for content such as Programs and Educators.
+- Relationships between related content types.
+- Flexible page sections for structured page composition.
+- Custom WordPress administration adjustments to support the intended editorial workflow.
+- Custom properties and responsive styling for consistent presentation across screen sizes.
+
+The implementation prioritizes a balance between structured content and a manageable editing experience. The goal is to give the site's maintainer useful content controls without requiring them to manually manage presentation details such as arbitrary font sizes, colors, or layout decisions.
+
+## Content Management Interface
+
+The WordPress administration interface is an important part of the project. In addition to building the public-facing site, the project involves designing the editing experience around the needs of the person who will maintain the content.
+
+The following screenshots will document representative parts of the custom WordPress interface.
+
+### Structured content
+
+![Program editing](./docs/images/program-editing.png)
+
+A representative custom post type editing screen showing structured fields for content such as a Program or Educator.
+
+### Flexible page sections
+
+![Page sections editing](./docs/images/page-sections.png)
+
+A page editing screen showing the structured page sections used to compose page content.
+
+### Related content
+
+![Educator editing](./docs/images/related-content.png)
+
+A representative editing screen showing relationships between related content, such as Programs, Educators, Events, or News.
+
+_Screenshots will be added as the editing interface and content model continue to be refined._
 
 ## Frontend and Accessibility
 
-The existing site's visual direction is being preserved in broad terms, while the implementation is being refined to address issues such as:
+The frontend implementation focuses on maintaining a consistent visual system while improving the site's behavior across screen sizes.
 
-- Responsive layout behavior
-- Small or difficult-to-read text
-- Contrast and visual consistency
-- Heading structure and content hierarchy
-- Content presentation across screen sizes
-- Editorial consistency
+Areas of focus include:
 
-The project is under active development, and accessibility improvements will continue to be evaluated as the theme and content structure evolve.
+- Responsive layouts and presentation.
+- Consistent typography and spacing.
+- Semantic content structure and heading hierarchy.
+- Color contrast and readable text.
+- Reducing reliance on formatting entered manually through the WordPress editor.
+- Making content and interactions more accessible and consistent.
 
-## Development and Deployment Workflow
+The existing visual direction is being preserved in many areas, with smaller design and implementation changes introduced where they improve accessibility, consistency, or usability.
 
-The theme is developed locally and maintained in a GitHub repository.
+Further accessibility and responsive testing remains part of the ongoing development process.
 
-The current workflow uses:
+## Development and Deployment
 
-1. Local development of the WordPress theme.
-2. Vite and pnpm for asset development and builds.
-3. GitHub for version control.
-4. GitHub Actions for automated build and deployment-related tasks.
-5. Deployment of the built theme to the live WordPress installation.
+The theme is developed locally and maintained in GitHub.
 
-This workflow allows changes to be developed and reviewed locally before the built theme is deployed to the live site.
+The development workflow includes:
+
+- Local WordPress development.
+- Git-based version control.
+- Vite and pnpm for frontend asset development.
+- SCSS/CSS for theme styling.
+- GitHub Actions for automated theme build and deployment.
+
+The GitHub Actions workflow automatically:
+
+1. Builds the theme's CSS assets.
+2. Copies the resulting theme files to the production server.
+
+This provides an automated deployment process for changes to the theme itself.
+
+### Theme and database deployment
+
+The theme deployment workflow and the WordPress database are managed separately.
+
+The initial production setup was established using **All-in-One WP Migration and Backup**, including migration of the WordPress database to the live site.
+
+Changes to the theme are deployed automatically through GitHub Actions. Changes to WordPress content, custom fields, and other database-managed information are not automatically synchronized through this workflow and may require a separate, more manual process.
+
+This separation allows theme development and deployment to follow a version-controlled workflow while WordPress content remains managed through the CMS.
 
 ## Current Status and Future Work
 
-The website is live, but the project is not yet considered complete.
+The project is under development. The public-facing site and core content structures are in place, while the theme, editorial experience, and content model continue to be refined.
 
-Areas for continued development include:
+Potential future work includes:
 
-- Refining the content model and editorial workflows.
-- Continuing responsive and accessibility improvements.
-- Reviewing templates and reusable theme components.
-- Establishing a more systematic quality-assurance process.
-- Documenting architectural decisions and content relationships.
-- Expanding automated checks and testing where appropriate.
-- Collecting before-and-after evidence of significant improvements.
-
-The implementation and documentation will continue to develop alongside the organization's content and operational needs.
+- Further accessibility and responsive testing.
+- Continued refinement of the WordPress editing experience.
+- Additional improvements to the content model and relationships.
+- Further refinement of the frontend's visual consistency.
+- Documentation of the editorial workflow for the staff maintainer.
+- Additional testing across browsers, screen sizes, and interaction methods.
 
 ## Development Environment
 
-The project uses:
+The project uses the following technologies and tools:
 
 - WordPress
 - PHP
+- Secure Custom Fields (SCF)
+- SCSS/CSS
 - Vite
 - pnpm
-- CSS
 - Git and GitHub
 - GitHub Actions
-- Structured custom fields
-- Custom post types
 
 ## Links
 
-- **Live site:** https://innovationfund.dreamhosters.com/
-- **Repository:** https://github.com/elisilk/innovation-fund
+- [Live site](https://innovationfund.dreamhosters.com/)
