@@ -110,7 +110,7 @@ The development workflow includes:
 - Local WordPress development.
 - Git-based version control.
 - Vite and pnpm for frontend asset development.
-- SCSS/CSS for theme styling.
+- CSS for theme styling.
 - GitHub Actions for automated theme build and deployment.
 
 The GitHub Actions workflow automatically:
@@ -150,7 +150,7 @@ The project uses the following technologies and tools:
 - WordPress
 - PHP
 - Secure Custom Fields (SCF)
-- SCSS/CSS
+- CSS
 - Vite
 - pnpm
 - Git and GitHub
