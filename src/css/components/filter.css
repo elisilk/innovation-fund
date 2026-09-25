@@ -1,6 +1,7 @@
 .filter-controls {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   flex-wrap: balance;
   gap: 0.5rem;
   border: 0;
