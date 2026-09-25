@@ -76,7 +76,8 @@ These remain intentionally thin.
 template-parts/
 
 - layout/
-- sections/
+- page-header/
+- page-content-blocks/
 - components/
 - cards/
 

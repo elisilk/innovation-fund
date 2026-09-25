@@ -34,6 +34,7 @@
 
   --clr-yellow-300: 48 100% 50%; /* #ffcb02 */
 
+  /* Semantic colors */
   --clr-body: var(--clr-neutral-400);
   --clr-heading: var(--clr-neutral-900);
 
@@ -77,7 +78,9 @@
   --container-inline-size-max-large: 1440px;
   --container-inline-size-gutter: 1.5rem;
 
-  --container-padding-block: 3rem;
+  --container-padding-block--sm: var(--space-md);
+  --container-padding-block--md: var(--space-lg);
+  --container-padding-block--lg: var(--space-xl);
 
   /* Border Radius */
   --radius-md: 0.5rem;

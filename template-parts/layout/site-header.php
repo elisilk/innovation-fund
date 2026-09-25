@@ -2,7 +2,7 @@
     <a href="#main" class="skip-to-main">Skip to main content</a>
 
     <div class="site-header__banner bg-primary">
-      <div class="container">
+      <div class="site-header__inner">
         <div class="site-header__menu">
           <?php wp_nav_menu(array(
             'theme_location' => 'social-menu',
@@ -16,18 +16,13 @@
     </div>
 
     <div class="site-header__main">
-      <div class="container">
+      <div class="site-header__inner">
         <a href="<?php echo home_url('/'); ?>">
-          <?php
-          if (function_exists('the_custom_logo') && has_custom_logo()) {
+          <?php if (function_exists('the_custom_logo') && has_custom_logo()) :
             the_custom_logo();
-          } else {
-            // Fallback image
-          ?>
+          else: ?>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/static/images/BIF-Logo-Color-Transparent.png" alt="<?php bloginfo('name'); ?>" class="logo__image">
-          <?php
-          }
-          ?>
+          <?php endif; ?>
         </a>
 
         <button
@@ -40,10 +35,9 @@
         </button>
 
         <div class="site-header__menu">
-
           <?php wp_nav_menu(array(
             'theme_location' => 'primary-menu',
-            'container'      => 'nav',
+            'site-header__inner'      => 'nav',
           )); ?>
 
           <a class="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMETUBMXB4DEQ&source=url">

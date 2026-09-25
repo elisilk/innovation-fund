@@ -1,9 +1,9 @@
-.section-text-image {
-  &:nth-of-type(2n) .section-text-image__text {
+.block-text-image {
+  &:nth-of-type(2n) .block-text-image__text {
     grid-column: 2;
   }
 
-  .section-text-image__inner {
+  .block-text-image__inner {
     max-inline-size: var(--container-inline-size-max-regular);
     margin-inline: auto;
 
@@ -15,17 +15,12 @@
     }
   }
 
-  .section-text-image__text {
+  .block-text-image__text {
     padding: 4rem 2rem;
     text-align: center;
-
-    /* a,
-    p {
-      font-size: var(--fs-xl);
-    } */
   }
 
-  .section-text-image__image {
+  .block-text-image__image {
     block-size: 100%;
     object-fit: cover;
   }

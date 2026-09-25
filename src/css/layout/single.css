@@ -4,6 +4,7 @@
     var(--container-inline-size-max-regular)
   );
   margin-inline: auto;
+  margin-block: var(--container-padding-block--md);
 
   display: grid;
   gap: calc(1.5 * var(--container-inline-size-gutter));
@@ -31,7 +32,7 @@
 }
 
 .post__main {
-  margin-block: var(--container-padding-block);
+  margin-block: var(--container-padding-block--md);
 }
 
 .post__thumbnail {

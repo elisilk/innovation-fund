@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="main" class="archive">
-  <div class="content-container container--mbe">
+  <div class="content-container">
     <header class="page__header section-title flow">
       <?php
       the_archive_title('<h1 class="page-title">', '</h1>');

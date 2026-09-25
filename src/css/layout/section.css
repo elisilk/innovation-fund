@@ -1,0 +1,28 @@
+.section--background-light {
+  background-color: hsl(var(--clr-neutral-200));
+}
+
+.section--background-accent {
+  background-color: hsl(var(--clr-accent));
+}
+
+.section--background-dark {
+  background-color: hsl(var(--clr-primary));
+}
+
+/* TO DO: make this alternating between light and transparent */
+.section--background-alternating {
+  background-color: hsl(var(--clr-neutral-300));
+}
+
+.section--padding-small {
+  padding-block: var(--container-padding-block--sm);
+}
+
+.section--padding-medium {
+  padding-block: var(--container-padding-block--md);
+}
+
+.section--padding-large {
+  padding-block: var(--container-padding-block--lg);
+}

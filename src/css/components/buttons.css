@@ -1,10 +1,14 @@
 .button {
   cursor: pointer;
-  display: inline flex;
+  display: block flex;
   background-color: hsl(var(--clr-accent));
   color: hsl(var(--clr-neutral-100));
   padding: 0.5em 1.25em;
   outline: none;
+
+  /* display: block; */
+  margin-inline: auto;
+  inline-size: fit-content;
 
   border: 1px solid hsl(var(--clr-accent));
   border-radius: 40px;

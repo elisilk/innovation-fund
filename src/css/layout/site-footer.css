@@ -1,5 +1,5 @@
-.site-footer__main > .container,
-.site-footer__banner > .container {
+.site-footer__main > .site-footer__inner,
+.site-footer__banner > .site-footer__inner {
   inline-size: min(
     100% - 2 * var(--container-inline-size-gutter),
     var(--container-inline-size-max-regular)
@@ -7,7 +7,7 @@
   margin-inline: auto;
 }
 
-.site-footer__main > .container {
+.site-footer__main > .site-footer__inner {
   padding-block: var(--space-lg);
   display: grid;
   gap: calc(1.5 * var(--container-inline-size-gutter));
@@ -39,7 +39,7 @@
   }
 }
 
-.site-footer__banner > .container {
+.site-footer__banner > .site-footer__inner {
   padding-block: var(--space-md);
   text-align: center;
 }

@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-  <div class="container container--mbe flow">
-    <header class="page__header section-title container container--text flow">
+  <div class="flow">
+    <header class="page__header section-title content-container flow">
       <h1 class="page-title"><?php _e('Oops! That page can&rsquo;t be found.', 'text-domain'); ?></h1>
     </header>
 
-    <section class="flow">
+    <section class="content-container flow">
       <p>The page you were looking for at <strong><?php echo esc_url(home_url($_SERVER['REQUEST_URI'])); ?></strong> does not exist.</p>
 
       <p><?php _e('Maybe try a search?', 'text-domain'); ?></p>
@@ -24,7 +24,7 @@
       $post_type_label = ucfirst($post_type) . "s"
     ?>
       <!-- <?php echo $post_type_label; ?> -->
-      <section class="flow">
+      <section class="content-container flow">
         <header>
           <h2><?php echo $post_type_label; ?></h2>
         </header>
@@ -32,14 +32,18 @@
         <?php
         $args = array(
           'post_type'      => $post_type,
-          'posts_per_page' => -1,
-          'orderby'        => 'title',
-          'order'          => 'ASC'
+          'posts_per_page' => 6,
+          'meta_key'  => 'year_funded',
+          'orderby'   => array(
+            'meta_value_num' => 'DESC',
+            'post_title' => 'ASC',
+          ),
+          'order'     => 'DESC',
         );
         $custom_query = new WP_Query($args);
 
         if ($custom_query->have_posts()) : ?>
-          <div class="card-list">
+          <div class="card-list is-regular-content">
             <?php while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
               <?php if ($post_type == 'program') :
@@ -77,7 +81,7 @@
       </section>
     <?php } ?>
 
-    <footer>
+    <footer class="content-container">
       <p>Developer note: 404.php</p>
     </footer>
   </div>

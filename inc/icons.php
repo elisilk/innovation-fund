@@ -36,7 +36,7 @@ function get_theme_icon($icon_name, $classes = array())
 /**
  * Echo the helper function output directly into template files.
  */
-function the_theme_icon($icon_name, $classes = array())
+function the_theme_icon(string $icon_name, $classes = array())
 {
   echo get_theme_icon($icon_name, $classes);
 }

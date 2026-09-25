@@ -1,29 +1,16 @@
 .card-list {
-  --auto-fill-style: auto-fill;
-  --card-inline-size: 300px;
+  --auto-fill-style: auto-fit;
+  --card-min-inline-size: 288px;
+  --column-width: min(var(--card-min-inline-size, 10rem), 100%);
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(
     var(--auto-fill-style),
-    minmax(min(100%, var(--card-inline-size)), 1fr)
+    minmax(var(--column-width), 1fr)
   );
   list-style-type: none;
   padding-inline-start: 0;
 }
-
-/* .card-list > * {
-  border: 1px dashed black;
-  border-radius: var(--radius-md);
-  padding: 1rem;
-}
-
-.card-list img {
-  max-block-size: 200px;
-  inline-size: auto;
-  margin-inline: auto;
-  object-fit: cover;
-}
- */
 
 .card {
   position: relative;
@@ -32,10 +19,6 @@
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   overflow: hidden;
-}
-
-.program-card {
-  max-inline-size: 400px;
 }
 
 .card,

@@ -1,9 +1,0 @@
-.section-featured-programs {
-  margin-block: var(--container-padding-block);
-
-  .button {
-    display: block;
-    margin-inline: auto;
-    inline-size: fit-content;
-  }
-}

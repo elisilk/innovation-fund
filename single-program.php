@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-  <article class="post post--program container--mb" aria-labelledby="post-title">
+  <article class="post post--program" aria-labelledby="post-title">
     <header class="post__header<?php echo has_post_thumbnail() ? ' post__header--has-thumbnail' : ''; ?>">
       <div class="post__header-text subcontent-container flow">
 

@@ -1,7 +1,7 @@
-.section-impact-stats {
+.block-highlights {
   background-color: hsl(var(--clr-blue-400));
 
-  .section-impact-stats__inner {
+  .block-highlights__inner {
     max-inline-size: var(--container-inline-size-max-regular);
     margin-inline: auto;
 
@@ -12,7 +12,7 @@
     }
   }
 
-  .stat {
+  .highlight {
     padding: 3rem 1rem;
     text-align: center;
 
@@ -26,13 +26,13 @@
     align-content: start;
   }
 
-  .stat__value {
+  .highlight__heading {
     line-height: 1;
     font-size: var(--fs-3xl);
     font-weight: var(--fw-semi-bold);
   }
 
-  .stat__description {
+  .highlight__description {
     margin-block-start: 1em;
     font-size: var(--fs-xl);
     text-wrap: balance;

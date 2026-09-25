@@ -143,11 +143,15 @@ bhs-innovation-fund-2026/
 │ └── editor.php
 │
 ├── template-parts/
-│ ├── sections/
-│ │ ├── hero.php
-│ │ ├── rich-text.php
+│ ├── page-header/
+│ │ ├── title-hero.php
+│ │ └── title-simple.php
+│ │
+│ ├── page-content-blocks/
+│ │ ├── prose.php (could be rich-text.php?)
 │ │ ├── text-image.php
-│ │ ├── featured-programs.php
+│ │ ├── highlights.php (could be features? or grid highlights?)
+│ │ ├── dynamic-programs.php
 │ │ ├── upcoming-events.php
 │ │ ├── quote.php
 │ │ ├── cta.php

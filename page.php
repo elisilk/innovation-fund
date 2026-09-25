@@ -1,34 +1,28 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-  <?php if (have_rows('page_sections')) : ?>
-    <article class="page" aria-labelledby="page-title">
-      <!-- page header section -->
-      <?php
-      the_row();
-      $template = 'template-parts/sections/'
-        . str_replace('_', '-', get_row_layout());
-      if (locate_template($template . '.php')) {
-        get_template_part($template);
-      }
-      ?>
+  <article class="page" aria-labelledby="page-title">
 
+    <!-- page header section -->
+    <?php
+    $page_header = get_field('page_header');
+    if ($page_header) {
+      $header_type = $page_header['header_type'] ?: 'simple';
+      if ($header_type === 'hero') {
+        get_template_part('template-parts/page-header/title-hero');
+      } else {
+        get_template_part('template-parts/page-header/title-simple');
+      }
+    }
+    ?>
+
+    <?php if (have_rows('page_sections')) : ?>
       <!-- page content sections -->
-      <?php if (have_rows('page_sections')) : ?>
-        <div class="page__main">
-          <?php while (have_rows('page_sections')) : the_row(); ?>
-            <?php
-            $template = 'template-parts/sections/'
-              . str_replace('_', '-', get_row_layout());
-            if (locate_template($template . '.php')) {
-              get_template_part($template);
-            }
-            ?>
-          <?php endwhile; ?>
-        </div>
-      <?php endif; ?>
-    </article>
-  <?php endif; ?>
+      <div class="page__main">
+        <?php get_template_part('template-parts/layout/page-content'); ?>
+      </div>
+    <?php endif; ?>
+  </article>
 </main>
 
 <?php get_footer(); ?>
