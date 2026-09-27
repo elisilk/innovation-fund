@@ -6,17 +6,21 @@
 
 function bhsinnovationfund2026_theme_assets()
 {
+  $theme_dir = get_template_directory();
   $theme_uri = get_template_directory_uri();
 
+  $css_path = $theme_dir . '/assets/dist/app.css';
+  $css_uri  = $theme_uri . '/assets/dist/app.css';
+
   wp_enqueue_style(
-    'bhs-innovation-fund-app',
-    $theme_uri . '/assets/dist/app.css',
+    'bhsinnovationfund',
+    $css_uri,
     [],
-    null
+    filemtime($css_path)
   );
 
   wp_enqueue_script(
-    'bhs-innovation-fund-app',
+    'bhsinnovationfund',
     $theme_uri . '/assets/dist/app.js',
     [],
     null,
