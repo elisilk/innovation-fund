@@ -1,7 +1,5 @@
 import '../css/app.css';
 
-console.log('is JS versioning happening?');
-
 /* Sticky header */
 
 const siteHeader = document.querySelector('.site-header');
