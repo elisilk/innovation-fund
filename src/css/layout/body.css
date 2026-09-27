@@ -13,15 +13,3 @@ body {
     scroll-margin-top: calc(177px + var(--admin-bar-block-size));
   }
 }
-
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  box-shadow: inset 0 0 0 10px red; /* Renders perfectly inside boundaries */
-  z-index: 99999;
-  pointer-events: none;
-}
