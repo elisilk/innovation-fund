@@ -3,7 +3,7 @@
   --card-min-inline-size: 288px;
   --column-width: min(var(--card-min-inline-size, 10rem), 100%);
   display: grid;
-  gap: 1rem;
+  gap: var(--space-md);
   grid-template-columns: repeat(
     var(--auto-fill-style),
     minmax(var(--column-width), 1fr)
