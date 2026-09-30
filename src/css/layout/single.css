@@ -17,12 +17,22 @@
   justify-content: start;
 }
 
-.post__thumbnail {
+.post__featured-image {
   grid-area: image;
+
   img {
     max-block-size: 300px;
     object-fit: cover;
     object-position: center 25%;
+  }
+
+  figcaption {
+    font-size: var(--fs-sm);
+    text-wrap: pretty;
+
+    .credit {
+      font-style: italic;
+    }
   }
 }
 
@@ -34,24 +44,29 @@
   margin-block: var(--container-padding-block--md);
 }
 
-.post--has-thumbnail {
+.post--has-featured-image {
   @media screen and (width > 750px) {
     .post__header__inner {
       display: grid;
       column-gap: var(--container-inline-size-gutter);
-      align-items: center;
       grid-template-areas:
         'title image'
         'excerpt image'
         'tags image';
       grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+      grid-template-rows: min-content min-content 1fr;
+      align-items: start;
 
       hgroup {
         grid-area: title;
       }
 
-      .post__thumbnail {
+      .post__featured-image {
         margin-block-start: 0;
+
+        img {
+          max-block-size: unset;
+        }
       }
     }
   }

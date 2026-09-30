@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-  <article class="post<?php echo has_post_thumbnail() ? ' post--has-thumbnail' : ''; ?>" aria-labelledby="post-title">
+  <article class="post<?php echo has_post_thumbnail() ? ' post--has-featured-image' : ''; ?>" aria-labelledby="post-title">
     <header class="post__header entry-content has-block-space-lg">
       <div class="post__header__inner flow-content<?php echo has_post_thumbnail() ? ' has-inline-size-lg' : ''; ?>">
         <hgroup>
@@ -19,7 +19,7 @@
         <?php endif; ?>
 
         <?php if (has_post_thumbnail()) : ?>
-          <div class="post__thumbnail has-flow-space-lg"><?php the_post_thumbnail(); ?></div>
+          <div class="post__featured-image has-flow-space-lg"><?php the_post_thumbnail(); ?></div>
         <?php endif; ?>
       </div>
     </header>

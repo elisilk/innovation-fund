@@ -1,11 +1,16 @@
 /* Block spacing/rhythm */
 
 .flow-content > * + * {
-  margin-block-start: var(--flow-space, 1.5em);
+  margin-block-start: var(--flow-space-sm, 1.5em);
 }
 
 .flow-content > * + :is(h1, h2, h3) {
   margin-block-start: var(--flow-space-lg);
+}
+
+.flow-content > * + .has-flow-space-xs,
+.flow-content > .has-flow-space-xs + * {
+  margin-block-start: var(--flow-space-xs);
 }
 
 .flow-content > * + .has-flow-space-md,

@@ -36,6 +36,10 @@ video {
   display: block;
 }
 
+:where(figure) {
+  margin: 0;
+}
+
 /* make form elements easier to work with */
 input,
 button,
