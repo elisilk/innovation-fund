@@ -2,7 +2,7 @@
 .site-footer__banner > .site-footer__inner {
   inline-size: min(
     100% - 2 * var(--container-inline-size-gutter),
-    var(--container-inline-size-max-regular)
+    var(--container-inline-size-max-lg)
   );
   margin-inline: auto;
 }

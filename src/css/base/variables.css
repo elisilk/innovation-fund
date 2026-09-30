@@ -73,9 +73,10 @@
 
   /* Layout */
   --container-inline-size-max-text: 600px;
-  --container-inline-size-max-medium: 800px;
-  --container-inline-size-max-regular: 1110px;
-  --container-inline-size-max-large: 1440px;
+  --container-inline-size-max-md: 800px;
+  --container-inline-size-max-lg: 1110px;
+  --container-inline-size-max-xl: 1440px;
+
   --container-inline-size-gutter: 1.5rem;
 
   --container-padding-block--sm: var(--space-md);

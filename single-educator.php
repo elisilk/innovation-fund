@@ -3,7 +3,7 @@
 <main id="main" class="site-main">
   <article class="post post--educator" aria-labelledby="post-title">
     <header class="post__header<?php echo has_post_thumbnail() ? ' post__header--has-thumbnail' : ''; ?>">
-      <div class="post__header-text subcontent-container">
+      <div class="post__header-text subentry-content">
         <h1 class="post__title" id="post-title"><?php the_title(); ?></h1>
 
         <div class="educator__department"><?php echo get_field('department')['label']; ?></div>
@@ -14,7 +14,7 @@
       <?php endif; ?>
     </header>
 
-    <div class="post__main content-container flow">
+    <div class="post__main entry-content flow">
 
       <?php
       $programs = get_field('related_programs');

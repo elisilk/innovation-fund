@@ -1,7 +1,7 @@
 .post__header {
   inline-size: min(
     100% - 2 * var(--container-inline-size-gutter),
-    var(--container-inline-size-max-regular)
+    var(--container-inline-size-max-lg)
   );
   margin-inline: auto;
   margin-block: var(--container-padding-block--md);

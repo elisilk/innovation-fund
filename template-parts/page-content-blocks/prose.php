@@ -1,3 +1,3 @@
-<div class="block-prose content-container flow">
+<div class="block-prose flow">
   <?php the_sub_field('content'); ?>
 </div>

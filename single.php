@@ -3,7 +3,7 @@
 <main id="main" class="site-main">
   <article class="post" aria-labelledby="post-title">
     <header class="post__header<?php echo has_post_thumbnail() ? ' post__header--has-thumbnail' : ''; ?>">
-      <div class="post__header-text subcontent-container flow">
+      <div class="post__header-text subentry-content flow">
         <h1 class="post__title" id="post-title"><?php the_title(); ?></h1>
 
         <?php if (has_excerpt()) : ?>
@@ -17,7 +17,7 @@
     </header>
 
     <?php if (!empty($post->post_content)) : ?>
-      <div class="post__main content-container flow">
+      <div class="post__main entry-content flow">
         <?php the_content(); ?>
       </div>
     <?php endif; ?>

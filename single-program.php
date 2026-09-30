@@ -3,7 +3,7 @@
 <main id="main" class="site-main">
   <article class="post post--program" aria-labelledby="post-title">
     <header class="post__header<?php echo has_post_thumbnail() ? ' post__header--has-thumbnail' : ''; ?>">
-      <div class="post__header-text subcontent-container flow">
+      <div class="post__header-text subentry-content flow">
 
         <hgroup>
           <?php
@@ -36,7 +36,7 @@
       <?php endif; ?>
     </header>
 
-    <div class="post__main content-container flow">
+    <div class="post__main entry-content flow">
 
       <?php
       $educators = get_field('related_educators');

@@ -9,20 +9,18 @@
     'section--padding-' . $section_padding,
   ];
 ?>
-  <section class="<?php echo esc_attr(implode(' ', $section_classes)); ?>">
-    <div class="section__inner">
-      <?php if (have_rows('content_blocks')) : ?>
-        <?php while (have_rows('content_blocks')) : the_row(); ?>
-          <?php
-          $block_layout = get_row_layout();
-          $block_template = 'template-parts/page-content-blocks/'
-            . str_replace('_', '-', $block_layout);
-          if (locate_template($block_template . '.php')) {
-            get_template_part($block_template);
-          }
-          ?>
-        <?php endwhile; ?>
-      <?php endif; ?>
-    </div>
+  <section class="<?php echo esc_attr(implode(' ', $section_classes)); ?> entry-content">
+    <?php if (have_rows('content_blocks')) : ?>
+      <?php while (have_rows('content_blocks')) : the_row(); ?>
+        <?php
+        $block_layout = get_row_layout();
+        $block_template = 'template-parts/page-content-blocks/'
+          . str_replace('_', '-', $block_layout);
+        if (locate_template($block_template . '.php')) {
+          get_template_part($block_template);
+        }
+        ?>
+      <?php endwhile; ?>
+    <?php endif; ?>
   </section>
 <?php endwhile; ?>

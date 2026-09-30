@@ -16,7 +16,7 @@
 
 .site-header__banner .site-header__inner,
 .site-header__main .site-header__inner {
-  max-inline-size: var(--container-inline-size-max-regular);
+  max-inline-size: var(--container-inline-size-max-lg);
   margin-inline: auto;
   transition: padding 0.5s ease;
 }

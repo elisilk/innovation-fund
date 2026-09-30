@@ -1,15 +1,10 @@
 .block-highlights {
   background-color: hsl(var(--clr-blue-400));
 
-  .block-highlights__inner {
-    max-inline-size: var(--container-inline-size-max-regular);
-    margin-inline: auto;
+  display: grid;
 
-    display: grid;
-
-    @media screen and (width > 650px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  @media screen and (width > 650px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .highlight {

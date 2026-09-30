@@ -3,16 +3,11 @@
     grid-column: 2;
   }
 
-  .block-text-image__inner {
-    max-inline-size: var(--container-inline-size-max-regular);
-    margin-inline: auto;
-
-    @media screen and (width > 650px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      grid-auto-flow: dense;
-    }
+  @media screen and (width > 650px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-auto-flow: dense;
   }
 
   .block-text-image__text {

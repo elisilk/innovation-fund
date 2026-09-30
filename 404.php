@@ -2,11 +2,11 @@
 
 <main id="main" class="site-main">
   <div class="flow">
-    <header class="page__header section-title content-container flow">
+    <header class="page__header section-title entry-content flow">
       <h1 class="page-title"><?php _e('Oops! That page can&rsquo;t be found.', 'text-domain'); ?></h1>
     </header>
 
-    <section class="content-container flow">
+    <section class="entry-content flow">
       <p>The page you were looking for at <strong><?php echo esc_url(home_url($_SERVER['REQUEST_URI'])); ?></strong> does not exist.</p>
 
       <p><?php _e('Maybe try a search?', 'text-domain'); ?></p>
@@ -24,7 +24,7 @@
       $post_type_label = ucfirst($post_type) . "s"
     ?>
       <!-- <?php echo $post_type_label; ?> -->
-      <section class="content-container flow">
+      <section class="entry-content flow">
         <header>
           <h2><?php echo $post_type_label; ?></h2>
         </header>
@@ -43,7 +43,7 @@
         $custom_query = new WP_Query($args);
 
         if ($custom_query->have_posts()) : ?>
-          <div class="card-list is-regular-content">
+          <div class="card-list is-inline-size-lg">
             <?php while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
               <?php if ($post_type == 'program') :
@@ -81,7 +81,7 @@
       </section>
     <?php } ?>
 
-    <footer class="content-container">
+    <footer class="entry-content">
       <p>Developer note: 404.php</p>
     </footer>
   </div>

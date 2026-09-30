@@ -13,7 +13,7 @@
   z-index: 1;
   inline-size: min(
     100% - 2 * var(--container-inline-size-gutter),
-    var(--container-inline-size-max-regular)
+    var(--container-inline-size-max-lg)
   );
   margin-inline: auto;
 }
