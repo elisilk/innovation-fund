@@ -10,6 +10,7 @@
   .highlight {
     padding: 3rem 1rem;
     text-align: center;
+    text-wrap: balance;
 
     color: hsl(var(--clr-neutral-100));
 
