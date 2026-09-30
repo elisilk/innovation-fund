@@ -2,7 +2,7 @@
 
 <main id="main" class="archive">
   <div class="entry-content">
-    <header class="page__header section-title flow">
+    <header class="page__header section-title flow-content">
       <?php
       the_archive_title('<h1 class="page-title">', '</h1>');
       the_archive_description('<div class="archive-description">', '</div>');
@@ -11,7 +11,7 @@
 
     <div class="flow">
       <?php if (have_posts()) : ?>
-        <div class="is-inline-size-lg">
+        <div class="has-inline-size-lg">
           <?php while (have_posts()) : the_post(); ?>
             <!-- Displays each post using a content template part -->
             <?php

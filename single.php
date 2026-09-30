@@ -2,8 +2,8 @@
 
 <main id="main" class="site-main">
   <article class="post<?php echo has_post_thumbnail() ? ' post--has-thumbnail' : ''; ?>" aria-labelledby="post-title">
-    <header class="post__header entry-content">
-      <div class="post__header__inner flow<?php echo has_post_thumbnail() ? ' is-inline-size-lg' : ''; ?>">
+    <header class="post__header entry-content has-block-space-lg">
+      <div class="post__header__inner flow-content<?php echo has_post_thumbnail() ? ' has-inline-size-lg' : ''; ?>">
         <h1 class="post__title" id="post-title"><?php the_title(); ?></h1>
 
         <?php if (has_excerpt()) : ?>
@@ -17,7 +17,7 @@
     </header>
 
     <?php if (!empty($post->post_content)) : ?>
-      <div class="post__main entry-content flow">
+      <div class="post__main entry-content flow-content has-block-space-lg">
         <?php the_content(); ?>
       </div>
     <?php endif; ?>

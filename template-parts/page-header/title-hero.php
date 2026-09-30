@@ -12,7 +12,7 @@ $heading = $hero_headline ?: $page_title;
 ?>
 <header class="page__header section-hero">
   <div class="hero__text">
-    <div class="hero__text-inner flow">
+    <div class="hero__text-inner flow-content">
       <h1 id="page-title" class="hero__headline">
         <?php echo esc_html($heading); ?>
       </h1>

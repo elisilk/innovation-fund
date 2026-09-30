@@ -2,8 +2,8 @@
 
 <main id="main" class="site-main">
   <article class="post<?php echo has_post_thumbnail() ? ' post--has-thumbnail' : ''; ?>" aria-labelledby="post-title">
-    <header class="post__header entry-content">
-      <div class="post__header__inner flow<?php echo has_post_thumbnail() ? ' is-inline-size-lg' : ''; ?>">
+    <header class="post__header entry-content has-block-space-lg">
+      <div class="post__header__inner flow-content<?php echo has_post_thumbnail() ? ' has-inline-size-lg' : ''; ?>">
         <hgroup>
           <?php
           $programType = get_field('program_type');
@@ -35,8 +35,7 @@
       </div>
     </header>
 
-    <div class="post__main entry-content flow">
-
+    <div class="post__main entry-content flow-content has-block-space-lg">
       <?php
       $educators = get_field('related_educators');
       if ($educators):

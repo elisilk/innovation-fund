@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-  <div class="container flow">
-    <header class="page__header section-title container container--text flow">
+  <div class="container flow-content">
+    <header class="page__header section-title container container--text flow-content">
       <h1 id="page-title">BHS Innovation Fund</h1>
     </header>
 
@@ -36,7 +36,7 @@
                 );
               else : ?>
 
-                <article class="post flow">
+                <article class="post flow-content">
                   <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail(); ?>
                   <?php endif; ?>

@@ -1,5 +1,5 @@
-<div class="block-text-image is-inline-size-lg is-no-gutter" aria-labelledby="block-heading">
-  <div class="block-text-image__text flow">
+<div class="block-text-image has-inline-size-lg has-no-gutter" aria-labelledby="block-heading">
+  <div class="block-text-image__text flow-content">
     <?php
     $heading = get_sub_field('heading');
     $text = get_sub_field('text');

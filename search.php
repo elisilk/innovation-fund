@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-  <div class="container flow">
+  <div class="container flow-content">
 
     <?php if (have_posts()) : ?>
       <header class="page-header">

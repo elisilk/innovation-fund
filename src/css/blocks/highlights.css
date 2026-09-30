@@ -29,7 +29,6 @@
   }
 
   .highlight__description {
-    margin-block-start: 1em;
     font-size: var(--fs-xl);
     text-wrap: balance;
   }

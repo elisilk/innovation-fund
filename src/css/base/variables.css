@@ -65,11 +65,15 @@
   --lh-headings: 1.2;
 
   /* Spacing */
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
   --space-lg: 2rem;
-  --space-xl: 4rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
 
   /* Layout */
   --container-inline-size-max-text: 600px;
@@ -79,9 +83,13 @@
 
   --container-inline-size-gutter: 1.5rem;
 
-  --container-padding-block--sm: var(--space-md);
-  --container-padding-block--md: var(--space-lg);
-  --container-padding-block--lg: var(--space-xl);
+  --container-block-spacing-sm: var(--space-md);
+  --container-block-spacing-md: var(--space-lg);
+  --container-block-spacing-lg: var(--space-xl);
+
+  --flow-space: var(--space-sm);
+  --flow-space-md: var(--space-md);
+  --flow-space-lg: var(--space-lg);
 
   /* Border Radius */
   --radius-md: 0.5rem;

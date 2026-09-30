@@ -1,14 +1,4 @@
 .block-prose {
-  margin-block: var(--container-padding-block--md);
-
-  h2 {
-    margin-block-start: 2rem;
-  }
-
-  p + p {
-    margin-block-start: 1rem;
-  }
-
   ul {
     padding-inline-start: 1.5rem;
   }

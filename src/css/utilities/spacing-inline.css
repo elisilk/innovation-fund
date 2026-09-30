@@ -6,22 +6,22 @@
   max-inline-size: min(100% - 2 * var(--g), var(--i));
 }
 
-.entry-content > .is-inline-size-md {
-  --i: var(--container-inline-size-max-md);
-}
-
-.entry-content > .is-inline-size-lg {
-  --i: var(--container-inline-size-max-lg);
-}
-
-.entry-content > .is-inline-size-xl {
-  --i: var(--container-inline-size-max-xl);
-}
-
-.entry-content > .is-no-gutter {
+.entry-content > .has-no-gutter {
   --g: 0px;
 }
 
-.entry-content > .is-inline-size-full {
+.entry-content > .has-inline-size-md {
+  --i: var(--container-inline-size-max-md);
+}
+
+.entry-content > .has-inline-size-lg {
+  --i: var(--container-inline-size-max-lg);
+}
+
+.entry-content > .has-inline-size-xl {
+  --i: var(--container-inline-size-max-xl);
+}
+
+.entry-content > .has-inline-size-full {
   max-inline-size: none;
 }

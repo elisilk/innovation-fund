@@ -1,4 +1,4 @@
-<div class="block-dynamic-programs is-inline-size-lg flow">
+<div class="block-dynamic-programs has-inline-size-lg flow-content">
   <header>
     <h2 class="section__heading">
       <?php the_sub_field('heading'); ?>
@@ -22,7 +22,7 @@
   $posts = new WP_Query($args);
 
   if ($posts->have_posts()): ?>
-    <ul class="card-list">
+    <ul class="card-list has-flow-space-lg">
       <?php while ($posts->have_posts()) : ?>
         <li>
           <?php

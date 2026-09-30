@@ -7,7 +7,7 @@ $intro_text = $page_header['intro_text'];
 $heading = $display_title ?: $page_title;
 ?>
 
-<header class="page__header section-title entry-content flow">
+<header class="page__header section-title entry-content flow-content has-block-space-lg">
   <h1 id="page-title">
     <?php echo esc_html($heading); ?>
   </h1>

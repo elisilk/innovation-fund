@@ -1,12 +1,12 @@
 <?php while (have_rows('page_sections')) : the_row();
   $section_background = get_sub_field('background');
-  $section_padding = get_sub_field('vertical_padding');
+  $section_block_spacing = get_sub_field('block_spacing');
   $section_content = get_sub_field('content_blocks');
 
   $section_classes = [
     'section',
-    'section--background-' . $section_background,
-    'section--padding-' . $section_padding,
+    'is-background-' . $section_background,
+    'has-block-space-' . $section_block_spacing,
   ];
 ?>
   <section class="<?php echo esc_attr(implode(' ', $section_classes)); ?> entry-content">

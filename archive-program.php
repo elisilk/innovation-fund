@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="main" class="program-archive">
-  <div class="entry-content flow">
+  <div class="entry-content flow-content has-block-space-lg">
     <header class="page__header section-title">
       <h1><?php post_type_archive_title(); ?></h1>
     </header>
@@ -33,7 +33,7 @@
     $posts = new WP_Query($args);
 
     if ($posts->have_posts()): ?>
-      <ul class="card-list is-inline-size-lg">
+      <ul class="card-list has-inline-size-lg has-block-space-lg">
         <?php while ($posts->have_posts()) : $posts->the_post(); ?>
           <li class="filterable-list-item" <?php
                                             $programType = get_field('program_type');

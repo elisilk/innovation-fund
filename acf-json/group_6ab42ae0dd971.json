@@ -57,8 +57,8 @@
                         },
                         {
                             "key": "field_6ab42ee9bc8a0",
-                            "label": "Vertical Padding",
-                            "name": "vertical_padding",
+                            "label": "Vertical Spacing",
+                            "name": "block_spacing",
                             "aria-label": "",
                             "type": "select",
                             "instructions": "",
@@ -71,9 +71,9 @@
                             },
                             "choices": {
                                 "none": "None",
-                                "small": "Small",
-                                "medium": "Medium",
-                                "large": "Large"
+                                "sm": "Small",
+                                "md": "Medium",
+                                "lg": "Large"
                             },
                             "default_value": "none",
                             "return_format": "value",
@@ -539,5 +539,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1790272276
+    "modified": 1790792609
 }
