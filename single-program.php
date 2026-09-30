@@ -27,10 +27,10 @@
             <div class="tag tag--active">Active</div>
           <?php endif; ?>
         </div>
+
         <?php if (has_post_thumbnail()) {
           get_template_part('template-parts/layout/featured-image');
-        }
-        ?>
+        } ?>
       </div>
     </header>
 

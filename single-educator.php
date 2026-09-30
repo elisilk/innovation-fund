@@ -18,9 +18,9 @@
           <div class="post__excerpt"><?php the_excerpt(); ?></div>
         <?php endif; ?>
 
-        <?php if (has_post_thumbnail()) : ?>
-          <div class="post__featured-image has-flow-space-lg"><?php the_post_thumbnail(); ?></div>
-        <?php endif; ?>
+        <?php if (has_post_thumbnail()) {
+          get_template_part('template-parts/layout/featured-image');
+        } ?>
       </div>
     </header>
 

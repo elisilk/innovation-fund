@@ -11,11 +11,9 @@
         <?php endif; ?>
       </div>
 
-      <?php if (has_post_thumbnail()) : ?>
-        <div class="post__featured-image has-flow-space-lg">
-          <?php the_post_thumbnail(); ?>
-        </div>
-      <?php endif; ?>
+      <?php if (has_post_thumbnail()) {
+        get_template_part('template-parts/layout/featured-image');
+      } ?>
     </header>
 
     <?php if (!empty($post->post_content)) : ?>

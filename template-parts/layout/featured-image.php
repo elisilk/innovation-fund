@@ -3,7 +3,7 @@
   <?php
   $thumbnail_id = get_post_thumbnail_id();
   $credit = get_field('credit', $thumbnail_id);
-  if (get_the_post_thumbnail_caption() || $credit) : ?>
+  if (get_the_post_thumbnail_caption() || !empty($credit)) : ?>
     <figcaption class="has-flow-space-xs">
       <?php if (get_the_post_thumbnail_caption()) : ?>
         <span class="wp-element-caption">
