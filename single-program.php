@@ -3,7 +3,7 @@
 <main id="main" class="site-main">
   <article class="post post--program" aria-labelledby="post-title">
     <header class="post__header<?php echo has_post_thumbnail() ? ' post__header--has-thumbnail' : ''; ?>">
-      <div class="post__header-text subentry-content flow">
+      <div class="post__header-text entry-content flow">
 
         <hgroup>
           <?php

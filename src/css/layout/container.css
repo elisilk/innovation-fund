@@ -6,13 +6,6 @@
   max-inline-size: min(100% - 2 * var(--g), var(--i));
 }
 
-.subentry-content > * {
-  --i: var(--container-inline-size-max-text);
-
-  margin-inline: auto;
-  max-inline-size: var(--i);
-}
-
 .entry-content > .is-inline-size-md {
   --i: var(--container-inline-size-max-md);
 }
