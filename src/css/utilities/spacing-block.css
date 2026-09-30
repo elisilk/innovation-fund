@@ -26,19 +26,19 @@
 /* section block spacing */
 
 .has-block-space-none {
-  margin-block: 0;
+  padding-block: 0;
 }
 
 .has-block-space-sm {
-  margin-block: var(--container-block-spacing-sm);
+  padding-block: var(--container-block-spacing-sm);
 }
 
 .has-block-space-md {
-  margin-block: var(--container-block-spacing-md);
+  padding-block: var(--container-block-spacing-md);
 }
 
 .has-block-space-lg {
-  margin-block: var(--container-block-spacing-lg);
+  padding-block: var(--container-block-spacing-lg);
 }
 
 /* Convenience block to investigate block scrolling */
