@@ -1,41 +1,24 @@
 .post__header {
-  inline-size: min(
-    100% - 2 * var(--container-inline-size-gutter),
-    var(--container-inline-size-max-lg)
-  );
-  margin-inline: auto;
   margin-block: var(--container-padding-block--md);
-
-  display: grid;
-  gap: calc(1.5 * var(--container-inline-size-gutter));
-  align-items: center;
-
-  @media screen and (width > 750px) {
-    &.post__header--has-thumbnail {
-      grid-template-columns:
-        min(var(--container-inline-size-max-text), 60%)
-        1fr;
-
-      .educator__department {
-        text-align: start;
-      }
-
-      .post__tags {
-        justify-content: start;
-      }
-    }
-  }
 }
 
 .post__title {
   text-align: start;
 }
 
-.post__main {
-  margin-block: var(--container-padding-block--md);
+.post__excerpt {
+  grid-area: excerpt;
+  font-style: italic;
+  font-size: var(--fs-lg);
+}
+
+.post__tags {
+  grid-area: tags;
+  justify-content: start;
 }
 
 .post__thumbnail {
+  grid-area: image;
   img {
     max-block-size: 300px;
     object-fit: cover;
@@ -43,11 +26,33 @@
   }
 }
 
-.post__excerpt {
-  font-style: italic;
+.educator__department {
   font-size: var(--fs-lg);
 }
 
-.educator__department {
-  font-size: var(--fs-lg);
+.post__main {
+  margin-block: var(--container-padding-block--md);
+}
+
+.post--has-thumbnail {
+  @media screen and (width > 750px) {
+    .post__header__inner {
+      display: grid;
+      column-gap: var(--container-inline-size-gutter);
+      align-items: center;
+      grid-template-areas:
+        'title image'
+        'excerpt image'
+        'tags image';
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+
+      hgroup {
+        grid-area: title;
+      }
+
+      .post__thumbnail {
+        margin-block-start: 0;
+      }
+    }
+  }
 }

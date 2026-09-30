@@ -1,17 +1,27 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-  <article class="post post--educator" aria-labelledby="post-title">
-    <header class="post__header<?php echo has_post_thumbnail() ? ' post__header--has-thumbnail' : ''; ?>">
-      <div class="post__header-text entry-content">
-        <h1 class="post__title" id="post-title"><?php the_title(); ?></h1>
+  <article class="post<?php echo has_post_thumbnail() ? ' post--has-thumbnail' : ''; ?>" aria-labelledby="post-title">
+    <header class="post__header entry-content">
+      <div class="post__header__inner flow<?php echo has_post_thumbnail() ? ' is-inline-size-lg' : ''; ?>">
+        <hgroup>
+          <?php
+          $educatorDept = get_field('department');
+          if (is_array($educatorDept)) : ?>
+            <div class="post__eyebrow"><?php echo $educatorDept['label']; ?></div>
+          <?php endif; ?>
 
-        <div class="educator__department"><?php echo get_field('department')['label']; ?></div>
+          <h1 class="post__title" id="post-title"><?php the_title(); ?></h1>
+        </hgroup>
+
+        <?php if (has_excerpt()) : ?>
+          <div class="post__excerpt"><?php the_excerpt(); ?></div>
+        <?php endif; ?>
+
+        <?php if (has_post_thumbnail()) : ?>
+          <div class="post__thumbnail"><?php the_post_thumbnail(); ?></div>
+        <?php endif; ?>
       </div>
-
-      <?php if (has_post_thumbnail()) : ?>
-        <div class="post__thumbnail"><?php the_post_thumbnail(); ?></div>
-      <?php endif; ?>
     </header>
 
     <div class="post__main entry-content flow">

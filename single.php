@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-  <article class="post" aria-labelledby="post-title">
-    <header class="post__header<?php echo has_post_thumbnail() ? ' post__header--has-thumbnail' : ''; ?>">
-      <div class="post__header-text entry-content flow">
+  <article class="post<?php echo has_post_thumbnail() ? ' post--has-thumbnail' : ''; ?>" aria-labelledby="post-title">
+    <header class="post__header entry-content">
+      <div class="post__header__inner flow<?php echo has_post_thumbnail() ? ' is-inline-size-lg' : ''; ?>">
         <h1 class="post__title" id="post-title"><?php the_title(); ?></h1>
 
         <?php if (has_excerpt()) : ?>

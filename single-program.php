@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
 <main id="main" class="site-main">
-  <article class="post post--program" aria-labelledby="post-title">
-    <header class="post__header<?php echo has_post_thumbnail() ? ' post__header--has-thumbnail' : ''; ?>">
-      <div class="post__header-text entry-content flow">
-
+  <article class="post<?php echo has_post_thumbnail() ? ' post--has-thumbnail' : ''; ?>" aria-labelledby="post-title">
+    <header class="post__header entry-content">
+      <div class="post__header__inner flow<?php echo has_post_thumbnail() ? ' is-inline-size-lg' : ''; ?>">
         <hgroup>
           <?php
           $programType = get_field('program_type');
@@ -27,13 +26,13 @@
             <div class="tag tag--active">Active</div>
           <?php endif; ?>
         </div>
-      </div>
 
-      <?php if (has_post_thumbnail()) : ?>
-        <div class="post__thumbnail">
-          <?php the_post_thumbnail(); ?>
-        </div>
-      <?php endif; ?>
+        <?php if (has_post_thumbnail()) : ?>
+          <div class="post__thumbnail">
+            <?php the_post_thumbnail(); ?>
+          </div>
+        <?php endif; ?>
+      </div>
     </header>
 
     <div class="post__main entry-content flow">
