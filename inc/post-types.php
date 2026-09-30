@@ -58,7 +58,7 @@ function bhsinnovationfund2026_register_post_types()
     'public' => true, // Makes the custom post type publicly accessible.
     'has_archive' => true, // Enables an archive page for this post type.
     'menu_icon' => 'dashicons-id-alt', // Sets the menu icon in the admin dashboard (Dashicons class).
-    'supports' => array('title', 'thumbnail'), // Enables support for the title, excerpt, and featured image (not the 'editor').
+    'supports' => array('title', 'thumbnail', 'excerpt'), // Enables support for the title, excerpt, and featured image (not the 'editor').
     'show_in_rest' => true, // Enables support for the Gutenberg editor and REST API.
     'show_in_nav_menus' => true,
     'rewrite' => [
