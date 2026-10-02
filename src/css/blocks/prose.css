@@ -17,4 +17,45 @@
       margin-inline-start: 0;
     }
   }
+
+  .quote {
+    --inline-start-spacing: 2rem;
+
+    background: #eee;
+    padding: 1em;
+    border-radius: 1rem;
+
+    blockquote {
+      margin: 0 0 0 var(--inline-start-spacing);
+      position: relative;
+
+      &::before {
+        content: open-quote;
+        position: absolute;
+        display: block;
+        left: calc(-1 * var(--inline-start-spacing));
+        font-size: var(--fs-4xl);
+        line-height: 1;
+      }
+
+      &::after {
+        content: close-quote;
+        position: absolute;
+        display: block;
+        visibility: hidden;
+        right: 0;
+        bottom: -0.5em;
+        font-size: var(--fs-4xl);
+        line-height: 1;
+      }
+
+      quotes: '“' '”' '‘' '’';
+    }
+
+    figcaption {
+      margin: 1em 0 0 var(--inline-start-spacing);
+      font-size: var(--fs-sm);
+      font-style: italic;
+    }
+  }
 }

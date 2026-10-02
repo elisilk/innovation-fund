@@ -34,7 +34,7 @@
       </div>
     </header>
 
-    <div class="post__main entry-content flow-content has-block-space-lg">
+    <div class="post__main entry-content flow-content has-block-space-lg block-prose">
       <?php
       $educators = get_field('related_educators');
       if ($educators):
@@ -48,17 +48,27 @@
           $order[$i] = $lastName;
         }
         array_multisort($order, SORT_ASC, $educators); ?>
+        <h2>Educators</h2>
         <ul>
           <?php foreach ($educators as $e): ?>
             <li>
               <a href="<?php echo get_permalink($e->ID); ?>"><?php echo get_the_title($e->ID); ?></a>
-              (<?php echo get_field('department', $e->ID)['label'] ?>)
+              <?php
+              $educatorDept = get_field('department', $e->ID);
+              if (!empty($educatorDept)) : ?>
+                (<?php echo esc_html($educatorDept['label']); ?>)
+              <?php endif; ?>
             </li>
           <?php endforeach; ?>
         </ul>
       <?php endif; ?>
 
-      <div><?php echo get_field('summary'); ?></div>
+      <?php
+      $programSummary = get_field('summary');
+      if ($programSummary) : ?>
+        <h2>Program Summary</h2>
+        <?php echo get_field('summary'); ?>
+      <?php endif; ?>
 
       <?php if (have_rows('related_stories')) : ?>
         <h2>Related News</h2>
@@ -76,7 +86,14 @@
         </ul>
       <?php endif; ?>
 
+      <?php
+      $programNarrative = get_field('narrative');
+      if ($programNarrative) : ?>
+        <h2>More Info</h2>
+        <?php echo apply_filters('the_content', $programNarrative); ?>
+      <?php endif; ?>
     </div>
+
   </article>
 </main>
 
