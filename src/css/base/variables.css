@@ -91,6 +91,7 @@
   --container-block-spacing-sm: var(--space-md);
   --container-block-spacing-md: var(--space-lg);
   --container-block-spacing-lg: var(--space-xl);
+  --container-block-spacing-xl: var(--space-2xl);
 
   --flow-space-xs: var(--space-2xs);
   --flow-space-sm: var(--space-sm);

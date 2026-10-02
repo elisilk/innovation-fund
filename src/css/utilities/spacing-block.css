@@ -41,6 +41,22 @@
   padding-block: var(--container-block-spacing-lg);
 }
 
+.has-block-end-space-sm {
+  padding-block-end: var(--container-block-spacing-sm);
+}
+
+.has-block-end-space-md {
+  padding-block-end: var(--container-block-spacing-md);
+}
+
+.has-block-end-space-lg {
+  padding-block-end: var(--container-block-spacing-lg);
+}
+
+.has-block-end-space-xl {
+  padding-block-end: var(--container-block-spacing-xl);
+}
+
 /* Convenience block to investigate block scrolling */
 
 .blank-space {

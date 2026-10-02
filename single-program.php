@@ -34,7 +34,7 @@
       </div>
     </header>
 
-    <div class="post__main entry-content flow-content has-block-space-lg block-prose">
+    <div class="post__main entry-content flow-content has-block-end-space-xl block-prose">
       <?php
       $educators = get_field('related_educators');
       if ($educators):

@@ -17,7 +17,7 @@
     </header>
 
     <?php if (!empty($post->post_content)) : ?>
-      <div class="post__main entry-content flow-content has-block-space-lg">
+      <div class="post__main entry-content flow-content has-block-end-space-xl">
         <?php the_content(); ?>
       </div>
     <?php endif; ?>

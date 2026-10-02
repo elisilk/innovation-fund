@@ -24,7 +24,7 @@
       </div>
     </header>
 
-    <div class="post__main entry-content flow-content has-block-space-lg">
+    <div class="post__main entry-content flow-content has-block-end-space-xl">
       <?php
       $programs = get_field('related_programs');
       if ($programs): ?>
