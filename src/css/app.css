@@ -10,6 +10,7 @@
 @import './components/cards.css';
 @import './components/skip-to-main.css';
 @import './components/filter.css';
+@import './components/search-form.css';
 
 @import './layout/body.css';
 @import './layout/site-header.css';

@@ -1,0 +1,23 @@
+.search-form {
+  & > div {
+    display: grid;
+    gap: 1rem;
+    justify-items: start;
+  }
+
+  input[type='text'] {
+    inline-size: 100%;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    &:focus-visible {
+      outline: 2px solid hsl(var(--clr-accent));
+      outline-offset: -2px;
+    }
+  }
+
+  .button {
+    margin-inline: 0 auto;
+  }
+}
