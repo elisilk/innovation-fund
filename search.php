@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main id="main" class="site-main">
-  <div class="container flow-content">
+<main id="main" class="search">
+  <div class="entry-content flow-content has-block-space-lg">
 
     <?php if (have_posts()) : ?>
       <header class="page-header">

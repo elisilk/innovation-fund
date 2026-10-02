@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<main id="main" class="site-main">
-  <div class="flow">
-    <header class="page__header section-title entry-content flow-content">
+<main id="main" class="not-found">
+  <div class="entry-content flow-content has-block-space-lg">
+    <header class="page__header section-title flow-content">
       <h1 class="page-title"><?php _e('Oops! That page can&rsquo;t be found.', 'text-domain'); ?></h1>
     </header>
 
-    <section class="entry-content flow-content">
+    <section class="flow-content">
       <p>The page you were looking for at <strong><?php echo esc_url(home_url($_SERVER['REQUEST_URI'])); ?></strong> does not exist.</p>
 
       <p><?php _e('Maybe try a search?', 'text-domain'); ?></p>
@@ -17,14 +17,13 @@
       </a>
     </section>
 
-
     <?php
     $post_types = array('post', 'page', 'program');
     foreach ($post_types as $post_type) {
       $post_type_label = ucfirst($post_type) . "s"
     ?>
       <!-- <?php echo $post_type_label; ?> -->
-      <section class="entry-content flow-content">
+      <section class="flow-content">
         <header>
           <h2><?php echo $post_type_label; ?></h2>
         </header>
@@ -81,7 +80,7 @@
       </section>
     <?php } ?>
 
-    <footer class="entry-content">
+    <footer>
       <p>Developer note: 404.php</p>
     </footer>
   </div>

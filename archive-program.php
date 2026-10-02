@@ -2,7 +2,7 @@
 
 <main id="main" class="program-archive">
   <div class="entry-content flow-content has-block-space-lg">
-    <header class="page__header section-title">
+    <header class="page__header section-title flow-content">
       <h1><?php post_type_archive_title(); ?></h1>
     </header>
 

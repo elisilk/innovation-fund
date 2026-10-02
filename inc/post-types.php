@@ -24,6 +24,7 @@ function bhsinnovationfund2026_register_post_types()
     'labels' => $program_labels, // Use the labels defined above.
     'public' => true, // Makes the custom post type publicly accessible.
     'has_archive' => true, // Enables an archive page for this post type.
+    'description'  => __('An archive of the programs supported by the Fund.', 'textdomain'),
     'menu_icon' => 'dashicons-lightbulb', // Sets the menu icon in the admin dashboard (Dashicons class).
     'supports' => array('title', 'thumbnail', 'excerpt'), // Enables support for the title, excerpt, and featured image (not the 'editor').
     'show_in_rest' => true, // Enables support for the Gutenberg editor and REST API.
@@ -57,6 +58,7 @@ function bhsinnovationfund2026_register_post_types()
     'labels' => $educator_labels,
     'public' => true, // Makes the custom post type publicly accessible.
     'has_archive' => true, // Enables an archive page for this post type.
+    'description'  => __('An archive of BHS educators involved in Fund programs.', 'textdomain'),
     'menu_icon' => 'dashicons-id-alt', // Sets the menu icon in the admin dashboard (Dashicons class).
     'supports' => array('title', 'thumbnail', 'excerpt'), // Enables support for the title, excerpt, and featured image (not the 'editor').
     'show_in_rest' => true, // Enables support for the Gutenberg editor and REST API.
@@ -90,6 +92,7 @@ function bhsinnovationfund2026_register_post_types()
     'labels' => $event_labels,
     'public' => true, // Makes the custom post type publicly accessible.
     'has_archive' => true, // Enables an archive page for this post type.
+    'description'  => __('An archive of major Fund events open to the public.', 'textdomain'),
     'menu_icon' => 'dashicons-calendar-alt', // Sets the menu icon in the admin dashboard (Dashicons class).
     'supports' => array('title', 'thumbnail', 'excerpt'), // Enables support for the title, excerpt, and featured image (not the 'editor').
     'show_in_rest' => true, // Enables support for the Gutenberg editor and REST API.

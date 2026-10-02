@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main id="main" class="archive">
-  <div class="entry-content">
+  <div class="entry-content flow-content has-block-space-lg">
     <header class="page__header section-title flow-content">
       <?php
       the_archive_title('<h1 class="page-title">', '</h1>');
@@ -9,18 +9,19 @@
       ?>
     </header>
 
-    <div class="flow">
+    <div class="flow-content">
       <?php if (have_posts()) : ?>
-        <div class="has-inline-size-lg">
+        <ul class="has-inline-size-lg flow-content">
           <?php while (have_posts()) : the_post(); ?>
-            <!-- Displays each post using a content template part -->
-            <?php
-            get_template_part('template-parts/content', get_post_format());
-            ?>
+            <li>
+              <?php
+              get_template_part('template-parts/content', get_post_format());
+              ?>
+              <?php echo get_post_format(); ?>
+            </li>
           <?php endwhile; ?>
           <?php the_posts_navigation(); ?>
-        </div>
-
+        </ul>
       <?php else : ?>
         <!-- Displayed if no posts match the archive criteria -->
         <?php get_template_part('template-parts/content', 'none'); ?>

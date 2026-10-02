@@ -502,6 +502,15 @@
                                     ],
                                     "min": "",
                                     "max": ""
+                                },
+                                "layout_6abfd5e8bdc92": {
+                                    "key": "layout_6abfd5e8bdc92",
+                                    "name": "sitemap",
+                                    "label": "Content - Sitemap",
+                                    "display": "block",
+                                    "sub_fields": [],
+                                    "min": "",
+                                    "max": ""
                                 }
                             },
                             "min": "",
@@ -539,5 +548,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1790947739
+    "modified": 1790957088
 }
