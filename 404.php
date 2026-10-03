@@ -42,7 +42,7 @@
 
               <?php if ($post_type == 'program') :
                 get_template_part(
-                  'template-parts/components/cards/program-card'
+                  'template-parts/components/program-card'
                 );
               else : ?>
 
@@ -104,7 +104,7 @@
 
             <?php if ($post_type == 'program') :
               get_template_part(
-                'template-parts/components/cards/program-card'
+                'template-parts/components/program-card'
               );
             else : ?>
 

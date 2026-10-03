@@ -28,7 +28,7 @@
           <?php
           $posts->the_post();
           get_template_part(
-            'template-parts/components/cards/program-card'
+            'template-parts/components/program-card'
           );
           ?>
         </li>
@@ -40,5 +40,5 @@
       <p>Sorry, no <?php echo $post_type_label; ?> were found!</p>
     </div>
   <?php endif;
-  wp_reset_query(); ?>
+  wp_reset_postdata(); ?>
 </div>

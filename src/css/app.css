@@ -23,6 +23,7 @@
 @import './blocks/prose.css';
 @import './blocks/highlights.css';
 @import './blocks/text-image.css';
+@import './blocks/timeline.css';
 
 @import './utilities/color.css';
 @import './utilities/spacing-block.css';
