@@ -1,4 +1,8 @@
 .timeline {
+  --year-font-size: var(--fs-lg);
+  --year-column-size: calc(3.5 * var(--year-font-size));
+  --year-group-spacing: 2rem;
+
   list-style: none;
   padding-inline-start: 0;
   position: relative;
@@ -13,23 +17,25 @@
   );
   background-size: 2px 100%;
   background-repeat: repeat-y;
-  background-position: 60px 0;
+  background-position: var(--year-column-size) 0;
 
   .timeline__year {
     .year {
       position: sticky;
       top: 0;
+      font-size: var(--year-font-size);
+      line-height: 1;
     }
 
     ul {
-      margin-block-start: -1.35rem;
-      padding-inline-start: 75px;
+      margin-block-start: calc(-1 * (var(--year-font-size) + 6px));
+      padding-inline-start: calc(var(--year-column-size) + 1rem - 2px);
       list-style: none;
     }
   }
 
   & > * + .timeline__year {
-    margin-block-start: 2em;
+    margin-block-start: var(--year-group-spacing);
   }
 
   .timeline__item {
@@ -46,19 +52,6 @@
       background: hsl(var(--clr-neutral-300));
       border: 2px solid white;
       border-radius: 50%;
-      z-index: 2;
     }
   }
 }
-
-/*
-Responsive option for when the viewport is wide enough, the vertical line will move to the center of the container, and then the items can be moved to either side of the line (alternating).
-
-@media screen and (min-width: 700px) {
-  .timeline {
-    &::after {
-      left: calc(50% - 1px);
-    }
-  }
-}
-*/
