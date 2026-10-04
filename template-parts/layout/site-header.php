@@ -30,8 +30,11 @@
           aria-controls="primary-nav"
           aria-expanded="false">
           <span class="visually-hidden">Menu</span>
-          <?php the_theme_icon('menu', array('icon-ui', 'icon-menu')); ?>
-          <?php the_theme_icon('close', array('icon-ui', 'icon-close')); ?>
+          <span class="site-header__menu-toggle-bars">
+            <span class="site-header__menu-toggle-bar"></span>
+            <span class="site-header__menu-toggle-bar"></span>
+            <span class="site-header__menu-toggle-bar"></span>
+          </span>
         </button>
 
         <div class="site-header__menu">

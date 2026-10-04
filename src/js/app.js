@@ -24,15 +24,31 @@ if (siteHeader) {
 
 const navToggle = document.querySelector('[aria-controls="primary-nav"]');
 
+function handleNavToggle() {
+  const navOpened = navToggle.getAttribute('aria-expanded');
+  if (navOpened === 'false') {
+    navToggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('menu-open');
+  } else {
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+  }
+}
+
+function handleBreakpointChange(e) {
+  if (!e.matches) {
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+  }
+}
+
 if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    const navOpened = navToggle.getAttribute('aria-expanded');
-    if (navOpened === 'false') {
-      navToggle.setAttribute('aria-expanded', 'true');
-    } else {
-      navToggle.setAttribute('aria-expanded', 'false');
-    }
-  });
+  navToggle.addEventListener('click', handleNavToggle);
+
+  const mediaQuery = window.matchMedia('(width < 650px)');
+  mediaQuery.addEventListener('change', handleBreakpointChange);
+
+  handleBreakpointChange(mediaQuery);
 }
 
 /* Card (Inclsuive Components) - https://inclusive-components.design/cards/ */
