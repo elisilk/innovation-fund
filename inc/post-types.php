@@ -26,7 +26,7 @@ function bhsinnovationfund2026_register_post_types()
     'has_archive' => true, // Enables an archive page for this post type.
     'description'  => __('An archive of the programs supported by the Fund.', 'textdomain'),
     'menu_icon' => 'dashicons-lightbulb', // Sets the menu icon in the admin dashboard (Dashicons class).
-    'supports' => array('title', 'thumbnail', 'excerpt'), // Enables support for the title, excerpt, and featured image (not the 'editor').
+    'supports' => array('title', 'thumbnail', 'excerpt', 'revisions'), // Enables support for the title, excerpt, and featured image (not the 'editor').
     'show_in_rest' => true, // Enables support for the Gutenberg editor and REST API.
     'show_in_nav_menus' => true,
     'rewrite' => [
@@ -60,7 +60,7 @@ function bhsinnovationfund2026_register_post_types()
     'has_archive' => true, // Enables an archive page for this post type.
     'description'  => __('An archive of BHS educators involved in Fund programs.', 'textdomain'),
     'menu_icon' => 'dashicons-id-alt', // Sets the menu icon in the admin dashboard (Dashicons class).
-    'supports' => array('title', 'thumbnail', 'excerpt'), // Enables support for the title, excerpt, and featured image (not the 'editor').
+    'supports' => array('title', 'thumbnail', 'excerpt', 'revisions'), // Enables support for the title, excerpt, and featured image (not the 'editor').
     'show_in_rest' => true, // Enables support for the Gutenberg editor and REST API.
     'show_in_nav_menus' => true,
     'rewrite' => [
@@ -94,7 +94,7 @@ function bhsinnovationfund2026_register_post_types()
     'has_archive' => true, // Enables an archive page for this post type.
     'description'  => __('An archive of major Fund events open to the public.', 'textdomain'),
     'menu_icon' => 'dashicons-calendar-alt', // Sets the menu icon in the admin dashboard (Dashicons class).
-    'supports' => array('title', 'thumbnail', 'excerpt'), // Enables support for the title, excerpt, and featured image (not the 'editor').
+    'supports' => array('title', 'thumbnail', 'excerpt', 'revisions'), // Enables support for the title, excerpt, and featured image (not the 'editor').
     'show_in_rest' => true, // Enables support for the Gutenberg editor and REST API.
     'show_in_nav_menus' => true,
     'rewrite' => [
