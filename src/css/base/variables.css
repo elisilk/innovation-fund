@@ -96,7 +96,7 @@
   --radius-full: 50%;
 
   /* Transitions */
-  --transition-base: 150ms ease;
+  --transition-base: 500ms ease;
 
   /* Wordpress */
   --admin-bar-block-size: 0px;

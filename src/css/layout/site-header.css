@@ -16,7 +16,7 @@
 .site-header__main .site-header__inner {
   max-inline-size: var(--container-inline-size-max-lg);
   margin-inline: auto;
-  transition: padding 0.5s ease;
+  transition: padding var(--transition-base);
 }
 
 .site-header__main {
@@ -25,7 +25,7 @@
 }
 
 .site-header__main .logo__image {
-  transition: height 0.5s ease;
+  transition: height var(--transition-base);
 }
 
 .site-header--small .header__main {
@@ -106,8 +106,8 @@
 
     transform-origin: top left;
     transition:
-      opacity 0.5s ease,
-      transform 0.5s ease;
+      opacity var(--transition-base),
+      transform var(--transition-base);
 
     &:nth-child(2) {
       top: 50%;
@@ -148,8 +148,8 @@
     border-bottom: 5px solid var(--clr-secondary);
 
     transition:
-      visibility 0.5s ease,
-      transform 0.5s ease;
+      visibility var(--transition-base),
+      transform var(--transition-base);
 
     padding-block: 2rem;
     padding-inline: 2rem;
