@@ -6,15 +6,3 @@
   display: inline-block;
   vertical-align: middle;
 }
-
-/* Control vector coloring directly through CSS */
-.icon-arrow {
-  fill: currentColor; /* For solid style icons */
-  stroke: currentColor; /* For outline style icons */
-  transition: fill 0.3s ease;
-}
-
-/* Effortless hover effects without duplicating assets */
-.btn-primary:hover .icon-arrow {
-  fill: currentColor;
-}
