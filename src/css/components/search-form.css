@@ -7,7 +7,7 @@
 
   input[type='text'] {
     inline-size: 100%;
-    border: 1px solid var(--clr-neutral-900);
+    border: var(--border-size-input) solid var(--clr-neutral-900);
     border-radius: var(--radius-md);
     padding: 0.5rem 1rem;
 

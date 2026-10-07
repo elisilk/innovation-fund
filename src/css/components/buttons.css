@@ -10,7 +10,7 @@
   margin-inline: auto;
   inline-size: fit-content;
 
-  border: 1px solid var(--clr-accent);
+  border: var(--border-size-button) solid var(--clr-accent);
   border-radius: var(--radius-xl);
   text-decoration: none;
   text-transform: uppercase;
@@ -20,7 +20,7 @@
   &:focus-visible {
     background-color: var(--clr-neutral-100);
     color: var(--clr-accent);
-    border: 1px solid var(--clr-accent);
+    border: var(--border-size-button) solid var(--clr-accent);
     text-decoration: none;
   }
 

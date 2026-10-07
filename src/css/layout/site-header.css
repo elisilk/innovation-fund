@@ -21,7 +21,7 @@
 
 .site-header__main {
   background-color: hsl(from var(--clr-neutral-100) h s l / 0.98);
-  border-bottom: 5px solid var(--clr-secondary);
+  border-bottom: var(--border-size-site-header) solid var(--clr-secondary);
 }
 
 .site-header__main .logo__image {
@@ -145,7 +145,7 @@
     inline-size: 100vi;
     max-block-size: 100vb;
     background-color: hsl(from var(--clr-neutral-100) h s l / 0.98);
-    border-bottom: 5px solid var(--clr-secondary);
+    border-bottom: var(--border-size-site-header) solid var(--clr-secondary);
 
     transition:
       visibility var(--transition-base),

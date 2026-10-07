@@ -95,6 +95,12 @@
   --radius-xl: 32px;
   --radius-full: 50%;
 
+  /* Border sizing */
+  --border-size-site-header: 5px;
+  --border-size-timeline-item: 2px;
+  --border-size-input: 1px;
+  --border-size-button: 1px;
+
   /* Transitions */
   --transition-base: 500ms ease;
 
