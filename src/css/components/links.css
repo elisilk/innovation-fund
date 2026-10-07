@@ -1,8 +1,6 @@
 a:not(:has(img)) {
   /* color: currentColor; */
   color: var(--clr-accent);
-  /* text-decoration: none; */
-  /* border-bottom: 1px dashed var(--clr-accent); */
   text-decoration: underline dashed 1px;
   text-underline-position: under;
 }
@@ -11,7 +9,6 @@ a:not(:has(img)):hover,
 a:not(:has(img)):focus-visible {
   color: var(--clr-primary);
   text-decoration: underline solid 1px;
-  /* border-bottom: 1px solid var(--clr-primary); */
 }
 
 a:focus-visible {
