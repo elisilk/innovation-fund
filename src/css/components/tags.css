@@ -12,7 +12,7 @@
   font-size: var(--fs-md);
   /* font-weight: var(--fw-semi-bold); */
   padding: 0.25rem 1rem;
-  border-radius: 40px;
+  border-radius: var(--radius-xl);
   text-align: center;
 }
 

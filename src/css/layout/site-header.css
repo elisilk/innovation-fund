@@ -102,7 +102,7 @@
     inline-size: 100%;
     block-size: var(--bar-thickness);
     background: var(--clr-primary);
-    border-radius: 2px;
+    border-radius: var(--radius-xs);
 
     transform-origin: top left;
     transition:

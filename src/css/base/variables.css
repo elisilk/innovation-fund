@@ -88,7 +88,12 @@
   --flow-space-lg: var(--space-lg);
 
   /* Border radius */
-  --radius-md: 0.5rem;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 32px;
+  --radius-full: 50%;
 
   /* Transitions */
   --transition-base: 150ms ease;

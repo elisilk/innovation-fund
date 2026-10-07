@@ -18,7 +18,7 @@
   cursor: pointer;
   background-color: var(--clr-neutral-100);
   box-shadow: var(--box-shadow);
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
   overflow: hidden;
 }
 
