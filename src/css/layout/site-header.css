@@ -20,8 +20,8 @@
 }
 
 .site-header__main {
-  background-color: hsl(var(--clr-neutral-100) / 0.98);
-  border-bottom: 5px solid hsl(var(--clr-secondary));
+  background-color: hsl(from var(--clr-neutral-100) h s l / 0.98);
+  border-bottom: 5px solid var(--clr-secondary);
 }
 
 .site-header__main .logo__image {
@@ -69,7 +69,7 @@
 .site-header__menu-controls {
   --icon-size: var(--fs-3xl);
   z-index: 2;
-  color: hsl(var(--clr-primary));
+  color: var(--clr-primary);
   display: none;
   cursor: pointer;
   margin: 0;
@@ -79,11 +79,11 @@
 
   &:hover,
   &:focus-visible {
-    color: hsl(var(--clr-primary));
+    color: var(--clr-primary);
   }
 
   &:focus-visible {
-    outline: 2px dashed hsl(var(--clr-primary));
+    outline: 2px dashed var(--clr-primary);
     outline-offset: 0;
   }
 
@@ -101,7 +101,7 @@
     display: block;
     inline-size: 100%;
     block-size: var(--bar-thickness);
-    background: hsl(var(--clr-primary));
+    background: var(--clr-primary);
     border-radius: 2px;
 
     transform-origin: top left;
@@ -144,10 +144,8 @@
     z-index: -1;
     inline-size: 100vi;
     max-block-size: 100vb;
-    background-color: hsl(var(--clr-neutral-100) / 0.98);
-    border-bottom: 5px solid hsl(var(--clr-secondary));
-
-    /* box-shadow: 0 0 0 100vmax hsl(var(--clr-neutral-900) / 0.4); */
+    background-color: hsl(from var(--clr-neutral-100) h s l / 0.98);
+    border-bottom: 5px solid var(--clr-secondary);
 
     transition:
       visibility 0.5s ease,
@@ -222,15 +220,15 @@
 
 .site-header__banner a:not(.button):not(:has(img)),
 .site-footer a:not(.button):not(:has(img)) {
-  color: hsl(var(--clr-neutral-100));
+  color: var(--clr-neutral-100);
 
   &:hover,
   &:focus-visible {
-    color: hsl(var(--clr-secondary));
+    color: var(--clr-secondary);
   }
 
   &:focus-visible {
-    outline: 2px dashed hsl(var(--clr-secondary));
+    outline: 2px dashed var(--clr-secondary);
     outline-offset: 4px;
   }
 }

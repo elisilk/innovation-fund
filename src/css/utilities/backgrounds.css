@@ -1,18 +1,18 @@
 /* background colors */
 
 .is-background-light {
-  background-color: hsl(var(--clr-light));
+  background-color: var(--clr-light);
 }
 
 .is-background-accent {
-  background-color: hsl(var(--clr-accent));
+  background-color: var(--clr-accent);
 }
 
 .is-background-dark {
-  background-color: hsl(var(--clr-primary));
+  background-color: var(--clr-primary);
 }
 
 /* TO DO: make this alternating between light and transparent */
 .is-background-alternating {
-  background-color: hsl(var(--clr-neutral-300));
+  background-color: var(--clr-neutral-300);
 }

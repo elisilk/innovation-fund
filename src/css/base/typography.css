@@ -1,13 +1,13 @@
 body {
-  background: hsl(var(--clr-primary));
-  color: hsl(var(--clr-body));
+  background: var(--clr-primary);
+  color: var(--clr-body);
   font-family: var(--ff-body);
   line-height: var(--lh-body);
 }
 
 main {
-  background: hsl(var(--clr-neutral-100));
-  color: hsl(var(--clr-neutral-900));
+  background: var(--clr-neutral-100);
+  color: var(--clr-neutral-900);
 }
 
 h1,
@@ -53,5 +53,5 @@ h1,
 h2,
 h3,
 h4 {
-  color: hsl(var(--clr-primary));
+  color: var(--clr-primary);
 }

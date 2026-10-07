@@ -45,7 +45,7 @@
 }
 
 .site-footer h3 {
-  color: hsl(var(--clr-neutral-100));
+  color: var(--clr-neutral-100);
   text-transform: uppercase;
   font-weight: var(--fw-normal);
   font-size: var(--fs-lg);
@@ -53,5 +53,6 @@
 
 .site-footer address {
   display: grid;
+  justify-content: center;
   gap: 0.5em;
 }

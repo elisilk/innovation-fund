@@ -19,14 +19,14 @@
 }
 
 .hero__text-inner {
-  background-color: hsl(var(--clr-neutral-100) / 0.8);
+  background-color: hsl(from var(--clr-neutral-100) h s l / 0.8);
   max-inline-size: 32rem;
   margin-block: 1rem;
   padding: 2rem;
 }
 
 .hero__headline {
-  color: hsl(var(--clr-blue-400));
+  color: var(--clr-blue-400);
   font-family: var(--ff-headings);
   font-size: var(--fs-2xl);
   font-weight: var(--fw-semi-bold);

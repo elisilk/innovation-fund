@@ -8,8 +8,12 @@
 
   &:hover,
   &:focus-visible {
-    background-color: hsl(var(--clr-accent));
-    color: hsl(var(--clr-neutral-100));
+    background-color: var(--clr-accent);
+    color: var(--clr-neutral-100);
     translate: 0;
+  }
+
+  &:focus-visible {
+    outline-color: var(--clr-accent);
   }
 }

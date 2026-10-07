@@ -20,21 +20,21 @@
   padding: 0.25rem 1rem;
   outline: none;
 
-  color: hsl(var(--clr-neutral-500));
-  background-color: hsl(var(--clr-neutral-100));
-  border: 1px solid hsl(var(--clr-secondary));
+  color: var(--clr-neutral-500);
+  background-color: var(--clr-neutral-100);
+  border: 1px solid var(--clr-secondary);
   border-radius: 40px;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-  color: hsl(var(--clr-neutral-500));
-  background-color: hsl(var(--clr-secondary));
-  border: 1px solid hsl(var(--clr-secondary));
+  color: var(--clr-neutral-500);
+  background-color: var(--clr-secondary);
+  border: 1px solid var(--clr-secondary);
 }
 
 .filter-btn.active {
   pointer-events: none;
-  color: hsl(var(--clr-neutral-500));
-  background-color: hsl(var(--clr-secondary));
+  color: var(--clr-neutral-500);
+  background-color: var(--clr-secondary);
 }

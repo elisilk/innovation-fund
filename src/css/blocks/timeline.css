@@ -12,8 +12,8 @@
 
   background-image: linear-gradient(
     to right,
-    hsl(var(--clr-neutral-300)),
-    hsl(var(--clr-neutral-300))
+    var(--clr-neutral-300),
+    var(--clr-neutral-300)
   );
   background-size: 2px 100%;
   background-repeat: repeat-y;
@@ -49,8 +49,8 @@
       position: absolute;
       left: -21px;
       top: 7px;
-      background: hsl(var(--clr-neutral-300));
-      border: 2px solid white;
+      background: var(--clr-neutral-300);
+      border: 2px solid var(--clr-neutral-100);
       border-radius: 50%;
     }
   }

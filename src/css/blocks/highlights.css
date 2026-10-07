@@ -1,5 +1,5 @@
 .block-highlights {
-  background-color: hsl(var(--clr-blue-400));
+  background-color: var(--clr-blue-400);
 
   display: grid;
 
@@ -12,10 +12,10 @@
     text-align: center;
     text-wrap: balance;
 
-    color: hsl(var(--clr-neutral-100));
+    color: var(--clr-neutral-100);
 
     &:nth-child(odd) {
-      background-color: hsl(var(--clr-blue-200));
+      background-color: var(--clr-blue-200);
     }
 
     display: grid;
