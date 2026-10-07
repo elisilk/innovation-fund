@@ -14,8 +14,9 @@
 
 @import './layout/body.css';
 @import './layout/site-header.css';
-@import './layout/site-main.css';
 @import './layout/site-footer.css';
+@import './layout/site-menus.css';
+@import './layout/site-main.css';
 
 @import './layout/single.css';
 

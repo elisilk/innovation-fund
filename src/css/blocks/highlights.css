@@ -23,8 +23,9 @@
   }
 
   .highlight__heading {
-    line-height: 1;
+    font-family: var(--ff-headings);
     font-size: var(--fs-3xl);
+    line-height: 1;
     font-weight: var(--fw-semi-bold);
   }
 

@@ -1,5 +1,5 @@
 <footer id="footer" class="site-footer">
-  <div class="site-footer__main bg-primary">
+  <div class="site-footer__main">
     <div class="site-footer__inner">
       <h2 class="visually-hidden">Further Information on the BHS Innovation Fund</h2>
 
@@ -38,15 +38,15 @@
         <h3>Quicklinks</h3>
         <div class="site-footer__menu">
           <?php wp_nav_menu(array(
-            'theme_location' => 'footer-menu',
-            'site-footer__inner'      => 'nav',
+            'theme_location'     => 'footer-menu',
+            'site-footer__inner' => 'nav',
           )); ?>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="site-footer__banner bg-secondary">
+  <div class="site-footer__banner">
     <div class="site-footer__inner">
       <p>&copy; 2026 BHS Innovation Fund</p>
     </div>

@@ -1,22 +1,18 @@
   <header id="header" class="site-header">
     <a href="#main" class="skip-to-main">Skip to main content</a>
 
-    <div class="site-header__banner bg-primary">
-      <div class="site-header__inner">
-        <div class="site-header__menu">
-          <?php wp_nav_menu(array(
-            'theme_location' => 'social-menu',
-          )); ?>
-        </div>
+    <div class="site-header__banner">
+      <div class="site-header__banner-inner">
+        <?php wp_nav_menu(array(
+          'theme_location' => 'social-menu',
+        )); ?>
 
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-E429F6JQIctwUuyTYnGEksqG-riLhewTjBBg5m-1xzcR0A/viewform">
-          Join Our Email List
-        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-E429F6JQIctwUuyTYnGEksqG-riLhewTjBBg5m-1xzcR0A/viewform">Join Our Email List</a>
       </div>
     </div>
 
     <div class="site-header__main">
-      <div class="site-header__inner">
+      <div class="site-header__main-inner">
         <a href="<?php echo home_url('/'); ?>">
           <?php if (function_exists('the_custom_logo') && has_custom_logo()) :
             the_custom_logo();
@@ -37,10 +33,10 @@
           </span>
         </button>
 
-        <div class="site-header__menu">
+        <div class="site-header__menu" id="primary-nav">
           <?php wp_nav_menu(array(
-            'theme_location' => 'primary-menu',
-            'site-header__inner'      => 'nav',
+            'theme_location'     => 'primary-menu',
+            'site-header__inner' => 'nav',
           )); ?>
 
           <a class="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMETUBMXB4DEQ&source=url">
