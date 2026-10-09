@@ -10,10 +10,8 @@
           if (is_array($programType)) : ?>
             <div class="post__eyebrow"><?php echo $programType['label']; ?></div>
           <?php endif; ?>
-
           <h1 class="post__title" id="post-title"><?php the_title(); ?></h1>
         </hgroup>
-
 
         <?php if (has_excerpt()) : ?>
           <div class="post__excerpt"><?php the_excerpt(); ?></div>
