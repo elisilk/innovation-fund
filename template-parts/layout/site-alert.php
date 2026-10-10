@@ -23,6 +23,8 @@ $alert_cta_link  = get_field('alert_cta_link', 'option');
 
 // Auto-exclude if the current page URL matches the target CTA URL
 if (is_array($alert_cta_link)) {
+  global $wp;
+
   $current_url = home_url(add_query_arg([], $wp->request));
   if (trailingslashit($current_url) === trailingslashit($alert_cta_link['url'])) {
     $is_current_page_excluded = true;

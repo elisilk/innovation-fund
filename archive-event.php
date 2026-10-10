@@ -23,6 +23,7 @@
 
       if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post();
+          global $post;
           $raw_date = get_field('event_date', false, false);
           if ($raw_date) {
             $year  = (int) substr($raw_date, 0, 4);
