@@ -14,4 +14,8 @@
   get_template_part(
     'template-parts/layout/site-header'
   );
+
+  get_template_part(
+    'template-parts/layout/site-alert'
+  );
   ?>

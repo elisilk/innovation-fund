@@ -103,6 +103,7 @@
 
   /* Transitions */
   --transition-base: 500ms ease;
+  --transition-faster: 400ms ease;
 
   /* Wordpress */
   --admin-bar-block-size: 0px;

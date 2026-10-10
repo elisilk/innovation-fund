@@ -20,12 +20,20 @@
 
 .site-header__main a:not(.button):not(:has(img)) {
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .site-header__banner a:not(.button):not(:has(img)),
 .site-footer__main a:not(.button):not(:has(img)) {
   color: var(--clr-neutral-100);
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   &:hover,
   &:focus-visible {
@@ -134,6 +142,7 @@
   .site-header__menu ul {
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
   }
 
   .site-header__menu-controls[aria-expanded='true'] {
