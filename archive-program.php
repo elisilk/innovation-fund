@@ -76,6 +76,11 @@
         <button class="filter-btn" data-filter='planning'>Planning</button>
       </div>
 
+      <form role="search" class="search-form" id="live-search-form">
+        <label class="visually-hidden" for="live-search-input">Search the programs:</label>
+        <input type="search" name="q" id="live-search-input" placeholder="Type to filter list...">
+      </form>
+
       <?php
       $post_type = 'program';
       $post_type_label = ucfirst($post_type) . "s";

@@ -169,3 +169,23 @@ if (filterControls !== null) {
     }),
   );
 }
+
+const filterLiveForm = document.getElementById('live-search-form');
+
+if (filterLiveForm !== null) {
+  filterLiveForm.addEventListener('submit', (e) => e.preventDefault());
+}
+
+const filterLiveInput = document.getElementById('live-search-input');
+
+if (filterLiveInput !== null) {
+  const filterListItems = document.querySelectorAll('.filterable-list-item');
+
+  filterLiveInput.addEventListener('keyup', function () {
+    const filter = this.value.toLowerCase();
+    filterListItems.forEach((item) => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = text.includes(filter) ? '' : 'none';
+    });
+  });
+}
