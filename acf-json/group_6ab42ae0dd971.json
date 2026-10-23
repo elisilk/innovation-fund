@@ -511,6 +511,42 @@
                                     "sub_fields": [],
                                     "min": "",
                                     "max": ""
+                                },
+                                "layout_6ad2dc768572b": {
+                                    "key": "layout_6ad2dc768572b",
+                                    "name": "media_image",
+                                    "label": "Media - Image",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_6ad2dc918572d",
+                                            "label": "Image",
+                                            "name": "image",
+                                            "aria-label": "",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "id",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": "",
+                                            "allow_in_bindings": 0,
+                                            "preview_size": "medium"
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
                                 }
                             },
                             "min": "",
@@ -548,5 +584,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1790957088
+    "modified": 1792759784
 }

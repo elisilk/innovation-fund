@@ -13,7 +13,7 @@
 
       <?php if (!empty($credit)) : ?>
         <span class="credit">
-          <?php echo 'Credit: ' . esc_html($credit); ?>
+          Credit: <?php echo esc_html($credit); ?>
         </span>
       <?php endif; ?>
     </figcaption>

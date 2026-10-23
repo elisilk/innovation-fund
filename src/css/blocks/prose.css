@@ -18,6 +18,16 @@
     }
   }
 
+  div:has(img) {
+    margin-block: var(--flow-space-lg);
+
+    .wp-caption-text {
+      margin-block-start: var(--flow-space-xs);
+      font-size: var(--fs-sm);
+      text-wrap: pretty;
+    }
+  }
+
   .quote {
     --inline-start-spacing: 2rem;
 
@@ -26,7 +36,8 @@
     border-radius: var(--radius-lg);
 
     blockquote {
-      margin: 0 0 0 var(--inline-start-spacing);
+      margin-block: 0;
+      margin-inline: var(--inline-start-spacing);
       position: relative;
 
       &::before {
@@ -53,7 +64,8 @@
     }
 
     figcaption {
-      margin: 1em 0 0 var(--inline-start-spacing);
+      margin-block: 1em 0;
+      margin-inline: var(--inline-start-spacing);
       font-size: var(--fs-sm);
       font-style: italic;
     }

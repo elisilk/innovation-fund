@@ -1,0 +1,11 @@
+.media-image {
+  figcaption {
+    margin-block-start: var(--flow-space-xs);
+    font-size: var(--fs-sm);
+    text-wrap: pretty;
+
+    .media-image__credit {
+      font-style: italic;
+    }
+  }
+}

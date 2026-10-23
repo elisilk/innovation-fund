@@ -26,6 +26,7 @@
 @import './blocks/highlights.css';
 @import './blocks/text-image.css';
 @import './blocks/timeline.css';
+@import './blocks/media-image.css';
 
 @import './utilities/color.css';
 @import './utilities/spacing-block.css';

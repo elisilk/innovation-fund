@@ -47,7 +47,7 @@
       block-size: 10px;
       inline-size: 10px;
       position: absolute;
-      left: -21px;
+      left: -20px;
       top: 7px;
       background: var(--clr-neutral-300);
       border: var(--border-size-timeline-item) solid var(--clr-neutral-100);
