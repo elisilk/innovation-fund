@@ -4,7 +4,12 @@
       <h2 class="visually-hidden">Further Information on the BHS Innovation Fund</h2>
 
       <div>
-        <?php the_theme_icon('chatbubbles-outline', array('icon-ui', 'icon-chatbubbles-outline')); ?>
+        <?php the_theme_icon(
+          'chatbubbles-outline',
+          [
+            'class' => 'icon-ui icon-chatbubbles-outline'
+          ]
+        ); ?>
         <h3>Contact</h3>
         <address>
           <a href="mailto:bhsinnovationfund@psbma.org">bhsinnovationfund@psbma.org</a>
@@ -16,7 +21,12 @@
       </div>
 
       <div>
-        <?php the_theme_icon('people-outline', array('icon-ui', 'icon-people-outline')); ?>
+        <?php the_theme_icon(
+          'people-outline',
+          [
+            'class' => 'icon-ui icon-people-outline'
+          ]
+        ); ?>
         <h3>Follow</h3>
         <div class="site-footer__menu">
           <?php wp_nav_menu(array(
@@ -26,7 +36,12 @@
       </div>
 
       <div>
-        <?php the_theme_icon('laptop-outline', array('icon-ui', 'icon-laptop-outline')); ?>
+        <?php the_theme_icon(
+          'laptop-outline',
+          [
+            'class' => 'icon-ui icon-laptop-outline'
+          ]
+        ); ?>
         <h3>Connect</h3>
         <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSd-E429F6JQIctwUuyTYnGEksqG-riLhewTjBBg5m-1xzcR0A/viewform">
           Join Our Email List
@@ -34,7 +49,12 @@
       </div>
 
       <div>
-        <?php the_theme_icon('link-outline', array('icon-ui', 'icon-link-outline')); ?>
+        <?php the_theme_icon(
+          'link-outline',
+          [
+            'class' => 'icon-ui icon-link-outline'
+          ]
+        ); ?>
         <h3>Quicklinks</h3>
         <div class="site-footer__menu">
           <?php wp_nav_menu(array(
