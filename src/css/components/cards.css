@@ -49,7 +49,7 @@
 .card__eyebrow {
   text-transform: uppercase;
   font-size: var(--fs-sm);
-  color: var(--clr-neutral-300);
+  color: var(--clr-neutral-400);
 }
 
 .card__title {
