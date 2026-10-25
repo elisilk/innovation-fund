@@ -31,5 +31,6 @@
 @import './utilities/color.css';
 @import './utilities/spacing-block.css';
 @import './utilities/spacing-inline.css';
+@import './utilities/dividers.css';
 @import './utilities/backgrounds.css';
 @import './utilities/visually-hidden.css';
