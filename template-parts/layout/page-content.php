@@ -9,7 +9,7 @@
     'has-block-space-' . $section_block_spacing,
   ];
 ?>
-  <section class="<?php echo esc_attr(implode(' ', $section_classes)); ?> entry-content flow-content">
+  <section class="<?php echo esc_attr(implode(' ', $section_classes)); ?> entry-content">
     <?php if (have_rows('content_blocks')) : ?>
       <?php while (have_rows('content_blocks')) : the_row(); ?>
         <?php
