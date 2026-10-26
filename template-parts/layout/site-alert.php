@@ -49,7 +49,7 @@ if ($is_alert_active && ! $is_current_page_excluded && ! empty($alert_message)) 
     <div class="site-alert__inner">
       <div class="site-alert__content">
         <?php if (!empty($alert_heading)) : ?>
-          <h2 class="site-alert__heading"><?php echo esc_html($alert_heading); ?></h2>
+          <div class="site-alert__heading"><?php echo esc_html($alert_heading); ?></div>
         <?php endif; ?>
 
         <div class="site-alert__body">

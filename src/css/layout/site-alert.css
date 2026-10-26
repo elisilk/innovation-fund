@@ -66,6 +66,11 @@
 
 .site-alert__heading {
   grid-area: heading;
+
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-headings);
+  text-wrap: balance;
 }
 
 .site-alert__body {
