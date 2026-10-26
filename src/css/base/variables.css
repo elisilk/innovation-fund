@@ -11,23 +11,26 @@
   --clr-neutral-800: hsl(0 0% 6%);
   --clr-neutral-900: hsl(0 0% 0%);
 
-  /* Primary accent colors */
-  --clr-blue-400: hsl(219 44% 21%); /* Delft Blue */
-  --clr-yellow-400: hsl(44 93% 54%); /* Amber */
-  --clr-red-400: hsl(4 52% 44%); /* Auburn */
+  /* Primary theme colors */
+  --clr-dark-blue-400: hsl(215 43% 27%); /* #273f61 */
+  --clr-yellow-400: hsl(46 95% 56%); /* #f9c623 */
+  --clr-red-400: hsl(7 46% 50%); /* #b95244 */
 
-  --clr-blue-200: hsl(218 49% 71%);
-  --clr-blue-300: hsl(215 36% 55%);
-
-  --clr-yellow-300: hsl(48 100% 50%);
+  --clr-light-blue-400: hsl(216 36% 66%); /* #8aa3c8 */
+  --clr-dark-grey-400: hsl(100 3% 23%); /* #3a3c39 */
+  --clr-light-grey-400: hsl(120 1% 36%); /* #5b5d5b */
 
   /* Semantic colors */
   --clr-body: var(--clr-neutral-400);
   --clr-heading: var(--clr-neutral-900);
 
-  --clr-primary: var(--clr-blue-400);
+  --clr-primary: var(--clr-dark-blue-400);
   --clr-secondary: var(--clr-yellow-400);
   --clr-accent: var(--clr-red-400);
+
+  --clr-primary-200: hsl(from var(--clr-primary) h s calc(l + 30));
+  --clr-primary-300: hsl(from var(--clr-primary) h s calc(l + 15));
+  --clr-primary-400: var(--clr-primary);
 
   --clr-light: var(--clr-neutral-150);
 

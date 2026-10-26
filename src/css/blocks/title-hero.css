@@ -26,7 +26,7 @@
 }
 
 .hero__headline {
-  color: var(--clr-blue-400);
+  color: var(--clr-primary);
   font-family: var(--ff-headings);
   font-size: var(--fs-2xl);
   font-weight: var(--fw-semi-bold);

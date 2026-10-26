@@ -1,5 +1,5 @@
 .block-highlights {
-  background-color: var(--clr-blue-400);
+  background-color: var(--clr-primary);
 
   display: grid;
 
@@ -15,7 +15,7 @@
     color: var(--clr-neutral-100);
 
     &:nth-child(odd) {
-      background-color: var(--clr-blue-200);
+      background-color: var(--clr-primary-300);
     }
 
     display: grid;
