@@ -3,6 +3,10 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 
+  &:has(.site-alert) {
+    grid-template-rows: min-content min-content 1fr min-content;
+  }
+
   main {
     /*
     TO DO: need this to match the size of the sticky headers
