@@ -28,8 +28,8 @@
   --clr-secondary: var(--clr-yellow-400);
   --clr-accent: var(--clr-red-400);
 
-  --clr-primary-200: hsl(from var(--clr-primary) h s calc(l + 30));
-  --clr-primary-300: hsl(from var(--clr-primary) h s calc(l + 15));
+  --clr-primary-200: hsl(from var(--clr-primary) h s calc(l + 20));
+  --clr-primary-300: hsl(from var(--clr-primary) h s calc(l + 10));
   --clr-primary-400: var(--clr-primary);
 
   --clr-light: var(--clr-neutral-150);
