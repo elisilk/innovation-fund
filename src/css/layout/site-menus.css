@@ -18,20 +18,20 @@
   gap: 0.5em;
 }
 
-.site-header__main a:not(.button):not(:has(img)) {
+.site-header__main a:not(.button) {
   text-decoration: none;
 
-  &:hover {
+  &:not(:has(img, svg)):hover {
     text-decoration: underline;
   }
 }
 
-.site-header__banner a:not(.button):not(:has(img)),
-.site-footer__main a:not(.button):not(:has(img)) {
+.site-header__banner a:not(.button),
+.site-footer__main a:not(.button) {
   color: var(--clr-neutral-100);
   text-decoration: none;
 
-  &:hover {
+  &:not(:has(img, svg)):hover {
     text-decoration: underline;
   }
 
