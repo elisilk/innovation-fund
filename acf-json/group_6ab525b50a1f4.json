@@ -169,40 +169,11 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_6ab526fd78438",
-                    "label": "Hero CTA Label",
-                    "name": "hero_cta_label",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_6ab525e761b71",
-                                "operator": "==",
-                                "value": "hero"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
                     "key": "field_6ab5272e78439",
                     "label": "Hero CTA Link",
                     "name": "hero_cta_link",
                     "aria-label": "",
-                    "type": "url",
+                    "type": "link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": [
@@ -219,9 +190,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": ""
+                    "return_format": "array",
+                    "allow_in_bindings": 0
                 }
             ]
         }
@@ -247,5 +217,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1790265914
+    "modified": 1793104411
 }

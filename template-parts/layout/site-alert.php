@@ -59,7 +59,7 @@ if ($is_alert_active && ! $is_current_page_excluded && ! empty($alert_message)) 
         <?php if (is_array($alert_cta_link)) :
           $link_url    = $alert_cta_link['url'];
           $link_title  = $alert_cta_link['title'];
-          $link_target = ! empty($alert_cta_link['target']) ? $alert_cta['target'] : '_self';
+          $link_target = !empty($alert_cta_link['target']) ? $alert_cta_link['target'] : '_self';
         ?>
           <a
             href="<?php echo esc_url($link_url); ?>"
