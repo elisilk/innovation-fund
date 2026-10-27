@@ -13,7 +13,7 @@
 .site-header__main {
   padding-inline: var(--container-inline-size-gutter);
   background-color: hsl(from var(--clr-neutral-100) h s l / 0.98);
-  border-bottom: var(--border-size-site-header) solid var(--clr-secondary);
+  border-bottom: var(--border-size-site-header) solid var(--clr-accent);
 }
 
 .site-header__banner-inner {

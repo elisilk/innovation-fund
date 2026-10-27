@@ -5,12 +5,13 @@
   left: 10px;
   translate: -200%;
   z-index: 2;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-secondary);
   color: var(--clr-neutral-100);
-  outline-color: var(--clr-accent);
+  outline-color: var(--clr-secondary);
 
   &:hover,
   &:focus-visible {
+    color: var(--clr-neutral-100);
     translate: 0;
   }
 }

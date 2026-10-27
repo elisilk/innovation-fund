@@ -37,11 +37,11 @@
 
   &:hover,
   &:focus-visible {
-    color: var(--clr-secondary);
+    color: var(--clr-accent);
   }
 
   &:focus-visible {
-    outline: 2px dashed var(--clr-secondary);
+    outline: 2px dashed var(--clr-accent);
     outline-offset: 4px;
   }
 }
@@ -127,7 +127,7 @@
     inline-size: 100vi;
     max-block-size: 100vb;
     background-color: hsl(from var(--clr-neutral-100) h s l / 0.98);
-    border-bottom: var(--border-size-site-header) solid var(--clr-secondary);
+    border-bottom: var(--border-size-site-header) solid var(--clr-accent);
 
     transition:
       transform var(--transition-base),

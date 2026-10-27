@@ -9,8 +9,8 @@
 
 .badge {
   display: inline-block;
-  font-size: var(--fs-md);
-  padding: 0.25rem 1rem;
+  font-size: var(--fs-sm);
+  padding: 0.1em 0.75em;
   border-radius: var(--radius-xl);
   text-align: center;
 }
@@ -21,11 +21,11 @@
 }
 
 .badge--active {
-  color: var(--clr-neutral-100);
+  color: var(--clr-neutral-500);
   background-color: var(--clr-accent);
 }
 
 .badge--current {
-  color: var(--clr-neutral-500);
-  background-color: var(--clr-secondary);
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-tertiary);
 }

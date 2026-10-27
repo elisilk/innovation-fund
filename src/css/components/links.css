@@ -1,6 +1,5 @@
 a {
-  /* color: currentColor; */
-  color: var(--clr-accent);
+  color: var(--clr-secondary);
   text-decoration: underline dashed 1px;
   text-underline-position: under;
 }

@@ -4,7 +4,7 @@
 }
 
 .site-footer__banner {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-accent);
 }
 
 .site-footer__main > .site-footer__inner,

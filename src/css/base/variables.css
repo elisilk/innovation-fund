@@ -11,10 +11,10 @@
   --clr-neutral-800: hsl(0 0% 6%);
   --clr-neutral-900: hsl(0 0% 0%);
 
-  /* Primary theme colors */
+  /* Theme colors */
   --clr-dark-blue-400: hsl(215 43% 27%); /* #273f61 */
-  --clr-yellow-400: hsl(46 95% 56%); /* #f9c623 */
   --clr-red-400: hsl(7 46% 50%); /* #b95244 */
+  --clr-yellow-400: hsl(46 95% 56%); /* #f9c623 */
 
   --clr-light-blue-400: hsl(216 36% 66%); /* #8aa3c8 */
   --clr-dark-grey-400: hsl(100 3% 23%); /* #3a3c39 */
@@ -25,8 +25,9 @@
   --clr-heading: var(--clr-neutral-900);
 
   --clr-primary: var(--clr-dark-blue-400);
-  --clr-secondary: var(--clr-yellow-400);
-  --clr-accent: var(--clr-red-400);
+  --clr-secondary: var(--clr-red-400);
+  --clr-accent: var(--clr-yellow-400);
+  --clr-tertiary: var(--clr-light-blue-400);
 
   --clr-primary-200: hsl(from var(--clr-primary) h s calc(l + 20));
   --clr-primary-300: hsl(from var(--clr-primary) h s calc(l + 10));

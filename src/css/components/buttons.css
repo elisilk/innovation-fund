@@ -1,7 +1,7 @@
 .button {
   cursor: pointer;
   display: block flex;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-secondary);
   color: var(--clr-neutral-100);
   padding: 0.5em 1.25em;
   outline: none;
@@ -10,7 +10,7 @@
   margin-inline: auto;
   inline-size: fit-content;
 
-  border: var(--border-size-button) solid var(--clr-accent);
+  border: var(--border-size-button) solid var(--clr-secondary);
   border-radius: var(--radius-xl);
   text-decoration: none;
   text-transform: uppercase;
@@ -19,13 +19,13 @@
   &:hover,
   &:focus-visible {
     background-color: var(--clr-neutral-100);
-    color: var(--clr-accent);
-    border: var(--border-size-button) solid var(--clr-accent);
+    color: var(--clr-secondary);
+    border: var(--border-size-button) solid var(--clr-secondary);
     text-decoration: none;
   }
 
   &:focus-visible {
-    outline: 2px dashed var(--clr-accent);
+    outline: 2px dashed var(--clr-secondary);
     outline-offset: 2px;
     text-decoration: none;
   }
