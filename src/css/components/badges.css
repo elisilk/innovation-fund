@@ -1,4 +1,4 @@
-.tags {
+.badges {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,26 +7,25 @@
   margin-block: 1.5rem 0;
 }
 
-.tag {
+.badge {
   display: inline-block;
   font-size: var(--fs-md);
-  /* font-weight: var(--fw-semi-bold); */
   padding: 0.25rem 1rem;
   border-radius: var(--radius-xl);
   text-align: center;
 }
 
-.tag--year {
+.badge--year {
   color: var(--clr-neutral-200);
   background-color: var(--clr-primary);
 }
 
-.tag--active {
+.badge--active {
   color: var(--clr-neutral-100);
   background-color: var(--clr-accent);
 }
 
-.tag--current {
+.badge--current {
   color: var(--clr-neutral-500);
   background-color: var(--clr-secondary);
 }

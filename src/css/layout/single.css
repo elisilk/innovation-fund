@@ -12,8 +12,8 @@
   font-size: var(--fs-lg);
 }
 
-.post__tags {
-  grid-area: tags;
+.post__badges {
+  grid-area: badges;
   justify-content: start;
 }
 
@@ -52,7 +52,7 @@
       grid-template-areas:
         'title image'
         'excerpt image'
-        'tags image';
+        'badges image';
       grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
       grid-template-rows: min-content min-content 1fr;
       align-items: start;

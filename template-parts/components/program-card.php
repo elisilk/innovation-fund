@@ -12,12 +12,12 @@
 
     <div class="card__excerpt"><?php the_excerpt(); ?></div>
 
-    <div class="tags">
-      <div class="tag tag--year"><?php echo get_field('year_funded'); ?></div>
+    <div class="badges">
+      <div class="badge badge--year"><?php echo get_field('year_funded'); ?></div>
       <?php if (get_field('is_currently_funded')) : ?>
-        <div class="tag tag--current">Currently Funded</div>
+        <div class="badge badge--current">Currently Funded</div>
       <?php elseif (get_field('is_active')) : ?>
-        <div class="tag tag--active">Active</div>
+        <div class="badge badge--active">Active</div>
       <?php endif; ?>
     </div>
   </div>
