@@ -12,6 +12,13 @@
 @import './components/filter.css';
 @import './components/search-form.css';
 
+@import './blocks/title-hero.css';
+@import './blocks/prose.css';
+@import './blocks/stats.css';
+@import './blocks/text-image.css';
+@import './blocks/timeline.css';
+@import './blocks/media-image.css';
+
 @import './layout/body.css';
 @import './layout/site-header.css';
 @import './layout/site-footer.css';
@@ -20,13 +27,6 @@
 @import './layout/site-main.css';
 
 @import './layout/single.css';
-
-@import './blocks/title-hero.css';
-@import './blocks/prose.css';
-@import './blocks/highlights.css';
-@import './blocks/text-image.css';
-@import './blocks/timeline.css';
-@import './blocks/media-image.css';
 
 @import './utilities/color.css';
 @import './utilities/spacing-block.css';

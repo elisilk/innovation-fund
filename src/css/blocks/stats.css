@@ -1,4 +1,4 @@
-.block-highlights {
+.block-stats {
   background-color: var(--clr-primary);
 
   display: grid;
@@ -7,7 +7,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .highlight {
+  .stat {
     padding: 3rem 1rem;
     text-align: center;
     text-wrap: balance;
@@ -22,14 +22,14 @@
     align-content: start;
   }
 
-  .highlight__heading {
+  .stat__value {
     font-family: var(--ff-headings);
     font-size: var(--fs-3xl);
     line-height: 1;
     font-weight: var(--fw-semi-bold);
   }
 
-  .highlight__description {
+  .stat__description {
     font-size: var(--fs-xl);
     text-wrap: balance;
   }

@@ -397,14 +397,14 @@
                                 },
                                 "layout_6ab50bf19f575": {
                                     "key": "layout_6ab50bf19f575",
-                                    "name": "highlights",
-                                    "label": "Content - Highlights",
+                                    "name": "stats",
+                                    "label": "Content - Stats",
                                     "display": "block",
                                     "sub_fields": [
                                         {
                                             "key": "field_6ab50c069f577",
-                                            "label": "Highlights",
-                                            "name": "highlights",
+                                            "label": "Stat",
+                                            "name": "stat",
                                             "aria-label": "",
                                             "type": "repeater",
                                             "instructions": "",
@@ -419,13 +419,13 @@
                                             "min": 0,
                                             "max": 0,
                                             "collapsed": "",
-                                            "button_label": "Add Highlight",
+                                            "button_label": "Add Stat",
                                             "rows_per_page": 20,
                                             "sub_fields": [
                                                 {
                                                     "key": "field_6ab50c149f578",
-                                                    "label": "Heading",
-                                                    "name": "heading",
+                                                    "label": "Value",
+                                                    "name": "value",
                                                     "aria-label": "",
                                                     "type": "text",
                                                     "instructions": "",
@@ -584,5 +584,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1792759784
+    "modified": 1793117537
 }
