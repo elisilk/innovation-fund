@@ -26,7 +26,7 @@
     <?php if (has_post_thumbnail()) : ?>
       <?php the_post_thumbnail(); ?>
     <?php else : ?>
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/static/images/logo/BIF-Logo-Top-Color-Transparent.png" alt="Default Program Image Placeholder" class="placeholder" />
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/static/images/logo/BIF-Logo-Top-Color-Transparent.png" alt="Default Program Image Placeholder" class="placeholder" />
     <?php endif; ?>
   </div>
 </article>

@@ -17,7 +17,7 @@
           <?php if (function_exists('the_custom_logo') && has_custom_logo()) :
             the_custom_logo();
           else: ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/static/images/BIF-Logo-Color-Transparent.png" alt="<?php bloginfo('name'); ?>" class="logo__image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/static/images/BIF-Logo-Color-Transparent.png" alt="<?php bloginfo('name'); ?>" class="logo__image">
           <?php endif; ?>
         </a>
 
